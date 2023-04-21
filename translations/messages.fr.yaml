@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Tapez votre EAN / Réf. ou Nom du produit
+        advanced_search: Recherche avancée
+        search_button: Chercher
+        lamp_type: Type de lampe
+        length: Longueur
+        wattage: Puissance
+        color_temperature: Température de couleur
+    product:
+        light_sources: Sources lumineuses
+        ballasts: Ballasts
+        ean: EAN
+        bc: Code de base
+        conventional_power: Puissance conventionnelle
+        power: Puissance
+        luminous_flux: Flux lumineux
+        luminous_efficacy: Efficacité lumineuse
+        color_temperature: Température de couleur
+        compatible_applications: Applications compatibles
+        ref_no: Réf. N°
+        brand: Marque
+        amount_of_lamps: Quantité de lampes
+        show_product_details_link: Afficher les détails du produit
+        close_product_details_link: Fermer les détails du produit
+        shatterproof: Gaine de protection
+        product_name: Désignation
+        lifetime: Durée de vie
+        guarantee: Garantie
+        low_flicker: Faible scintillement
+        eek: Classe d'efficacité énergétique
+        length: Longueur
+        lamp_type: Type de lampe
+        lamps_on_ballast: Lampes fonctionnant sur ballast
+    application:
+        industry: industrie
+        warehouse: logistique
+        car_park: parking
+        retail: commerce
+        food_display: vitrine avec nourriture
+        office: Bureau
+        residential: Résidentiel
+        outdoor: extérieur / transports en commun
+        public_building: bâtiment public / sports et loisirs
+    list:
+        compatible_ballasts: Ballasts compatibles
+        incompatible_ballasts: Ballasts incompatibles
+        compatible_light_sources:  Sources de lumière compatibles
+        incompatible_light_sources: Sources lumineuses incompatibles
+    messages:
+        important_info: "Veuillez noter : le nom du produit et la référence de votre ballast doivent être identiques au nom du produit et à la référence de ce ballast sélectionné. \n
+        Il est obligatoire d'utiliser les tubes LED OSRAM uniquement avec un ballast compatible. LEDVANCE n'accepte aucune responsabilité ou garantie  lors de l'utilisation de ballasts non mentionnés, marqués comme ballasts non compatibles ou lors de l'utilisation de modèles de référence successeurs/différents des ballasts testés."
+        tooltip_msg: Vous pouvez trouver le code sur votre SubstiTUBE.
+        empty_results_ballast: Si le ballast existant n'est pas répertorié, il n'a pas été testé pour la source lumineuse. Veuillez prendre contact avec notre service client.
+        empty_results_light_sources: Si la source lumineuse existante n'est pas répertoriée, elle n'a pas été testée pour le ballast. Veuillez prendre contact avec notre service client.
+        guarantee_message: Vous trouverez de plus amples informations et les conditions exactes de la garantie sur www.ledvance.fr/garantie.
+    footer:
+        text: LEDVANCE, titulaire de la license de la marque déposée OSRAM pour les lampes en éclairage général.
+    guarantee:
+        three_years: 3 années
+        five_years: 5 années
+    yes_no:
+        yes: Oui
+        no: Non
+        na: "N/A"
+    buttons:
+        downloadPdf: Télécharger le PDF
+        tableDownload: Télécharger le PDF avec tous les résultats
+    pdf_titles:
+        techincal_data: Données techniques
+        summary_title: Résumé de votre OSRAM SubstiTUBE sélectionné
+        summary_title_list: SubstiTUBES OSRAM compatibles
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Page
+        page_of: sur
+        copiright: "© 2021, LEDVANCE GmbH. Tous droits réservés."
+    pdf_text:
+        your_ecg_on_hand: Votre ballast à portée de main
+        your_substitube_on_hand: Votre OSRAM SubstiTUBE à portée de main
+        compatible_osram_substitube: SubstiTUBE OSRAM compatible
+        warning: "Avertissement : Il est obligatoire d'utiliser les tubes LED OSRAM uniquement avec un ballast compatible. LEDVANCE n'accepte aucune responsabilité ou garantie  lors de l'utilisation de ballasts non mentionnés, marqués comme ballasts non compatibles ou lors de l'utilisation de modèles successeurs / de références différentes. ballasts."
+        disclaimer: "Avertissement : Sous réserve de modifications sans préavis. Sauf erreurs et omissions."
+        compatible_lights: SubstiTUBES OSRAM compatibles
+        compatible_ballast: Ballast compatible
+    home:
+        title: Veuillez saisir les données de votre SubstiTUBE ou ballast dans le champ de recherche. Vous trouverez cette information imprimée sur votre ballast ou SubstiTUBE. Les produits compatibles seront affichés après la recherche et peuvent être sélectionnés.
+        imprint: Imprimer
+        termsOfUse: Conditions d'utilisation
+        privacyPolicy: Politique de confidentialité
+        cookiePolicy: Politique relative aux cookies
+        ledvanceWorldwide: LEDVANCE dans le monde
+        contact: Contact
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Tous les droits sont réservés."
+    no_results:
+        short_message: Aucun résultat de recherche.
+        long_message: "Aucun résultat de recherche. \n \n
+        Si l'alimentation électronique existante n'est pas répertoriée, c'est qu'elle n'a pas été testée pour la lampe. Veuillez contacter notre service client. Les alimentations conventionnelles sont toujours compatibles avec les produits SubstiTUBE EM et UNIVERSAL."
+    scenario_text:
+        scenario_em: Fonctionnement sur alimentation conventionnelle ou branchement direct. Le contrôle de la compatibilité des alimentations conventionnelles n'est pas nécassaire.
+        scenario_ac: Fonctionnement sur branchement direct.
+        scenario_t8u: Fonctionne également avec alimentation conventionnelle ou sur branchement direct. Le contrôle de la compatibilité des alimentations conventionnelles n'est pas nécassaire.
+        scenario_t5u: Fonctionne également sur branchement direct.

@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";define([],function(){"use strict";var a=function(a){this.listen=a},b=function(){this.register=[],this.dispatcher=new a(this.register)};return a.prototype={constructor:a,addEvent:function(a,b){this.listen.forEach(function(c){c.name===a&&c.callback.call(b)})}},b.prototype={constructor:b,on:function(a,b){this.register.push({name:a,callback:b})}},b});

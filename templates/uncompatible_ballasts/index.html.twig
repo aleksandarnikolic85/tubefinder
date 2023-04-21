@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ '$.list.incompatible_ballasts' | trans }}{% endblock %}
+
+{% block content %}
+
+    <section class="t-section" id="">
+        <div class="o-content-modul   ">
+            <div class="container">
+                <div class="row  _justify-center">
+                    {#                <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">#}
+                    <div class="col ">
+                        <h3 class="headline -size-large -bold sub_gray">{{ lightSource.productName }} - {{ lightSource.ean }}</h3>
+
+                        <div class="-wrapper wrapper-relative">
+
+                            <p class="important_text">{{ '$.messages.important_info' | trans | nl2br }}</p>
+
+                            <label for="packaging_information">
+                                <h3 class="headline -size-small -medium">{{ '$.list.incompatible_ballasts' | trans }}</h3>
+{#                                <a href="{{ path('incompatible_ballasts', { 'id': lightSource.id, 'sort': 1 }) }}" class="show-more-button sort-button" id="sort-by-brand" >Sort by brand</a>#}
+                            </label>
+
+                            <div class="-body">
+                                <div class="o-table-modul">
+                                    <div class="m-tables -is-highlight">
+                                        <div class="a-table " data-require="clickableTableRow">
+                                            <table id="packaging-information">
+                                                <thead>
+                                                <tr>
+                                                    <th>{{'$.product.brand' | trans }}</th>
+                                                    <th>{{'$.product.product_name' | trans }}</th>
+                                                    <th>{{'$.product.ref_no' | trans }}</th>
+                                                    <th>{{'$.product.lamps_on_ballast' | trans }}</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                {% set empty_text = "N/A" %}
+
+                                                {% for ballast in ballasts %}
+                                                    {% set remark = checkRemarks(lightSource, ballast, app.request.locale)  %}
+
+                                                    <tr data-id="{{ ballast.id }}">
+                                                        <td>{{ ballast.brand }}</td>
+                                                        <td>{{ ballast.productName }}</td>
+                                                        <td>{% if ballast.refNo != 'null' %}{{ ballast.refNo }}{% else %}{{ empty_text }}{% endif %}</td>
+                                                        <td>{{ ballast.lampAmount }}</td>
+                                                    </tr>
+
+                                                    {% if remark %}
+                                                        <tr>
+                                                            <td colspan="10" style="padding: 0.3rem 0.3rem 0.3rem 1rem; text-align: left; font-size: 10px; border-top: 1px #FFFFFF solid;">§ {{ remark }}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

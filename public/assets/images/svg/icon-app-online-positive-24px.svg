@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<title>app_online_small</title>
+<g data-name="App/Online">
+<g  data-name="App_Online_small">
+<path d="M16,3H8A3,3,0,0,0,5,6V18a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V6A3,3,0,0,0,16,3ZM17.5,18A1.52,1.52,0,0,1,16,19.5H8A1.52,1.52,0,0,1,6.5,18V6A1.52,1.52,0,0,1,8,4.5h8A1.52,1.52,0,0,1,17.5,6Z"/>
+<rect x="10" y="17" width="4" height="1"/>
+<path d="M8,16h8V6H8ZM9,7h6v8H9Z"/>
+</g>
+</g>
+</svg>

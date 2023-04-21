@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";var cookiePolicyReject=function(){return{init:function(){var a=document.querySelector("#accept-cookies"),b=document.querySelector("#reject-cookies");null!==a&&a.addEventListener("click",function(){VisitorSettings.acceptCookies()}),null!==b&&b.addEventListener("click",function(){VisitorSettings.rejectCookies()})}}}(cookiePolicyReject);cookiePolicyReject.init();

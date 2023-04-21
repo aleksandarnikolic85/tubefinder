@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ '$.list.compatible_light_sources' | trans }}{% endblock %}
+
+{% block content %}
+
+    <section class="t-section" id="">
+        <div class="o-content-modul   ">
+            <div class="container">
+                <div class="row  _justify-center">
+{#                    <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">#}
+                    <div class="col">
+                        <h3 class="headline -size-large -bold sub_gray">{{ ballast.productName }} - {{ ballast.refNo }}</h3>
+                        <div class="-wrapper wrapper-relative">
+
+{#                            <div class="m-content-text">#}
+{#                                <div class="-copytext">#}
+                                    <p class="important_text">{{ '$.messages.important_info' | trans | nl2br }}</p>
+{#                                </div>#}
+{#                            <div>#}
+
+
+                            <label for="packaging_information">
+                                <h3 class="headline -size-small -medium">{{ '$.list.compatible_light_sources' | trans }}</h3>
+{#                                <a href="{{ path('compatible_light:sources', { 'id': lightSource.id }) }}" class="show-more-button sort-button" id="sort-by-brand" >Sort by brand</a>#}
+                            </label>
+
+                            <div class="-body">
+                                <div class="o-table-modul">
+                                    <div class="m-tables -is-highlight">
+
+                                        {% if lightSources %}
+
+                                        <div class="a-table " data-require="clickableTableRow">
+                                            <table id="packaging-information">
+                                                <thead>
+                                                    <tr>
+                                                        <th>{{ '$.product.product_name' | trans }}</th>
+                                                        <th>{{ '$.product.ean' | trans }}</th>
+                                                        <th>{{ '$.product.bc' | trans }}</th>
+                                                        <th>{{ '$.product.luminous_flux' | trans }}</th>
+                                                        <th>{{ '$.product.lifetime' | trans }}</th>
+                                                        <th>{{ '$.product.shatterproof' | trans }}</th>
+                                                        <th>{{ '$.product.guarantee' | trans }}</th>
+                                                        <th>{{ '$.product.power' | trans }}</th>
+                                                        <th>{{ '$.product.color_temperature' | trans }}</th>
+
+                                                        <th></th>
+    {#                                                    <th>L*</th>#}
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                {% set empty_text = "N/A" %}
+
+                                                {% for lightSource in lightSources %}
+
+                                                    {% set remark = checkRemarks(lightSource, ballast, app.request.locale)  %}
+
+                                                    <tr data-id="{{ lightSource.id }}">
+                                                        <td>{{ lightSource.productName }}</td>
+                                                        <td>{% if lightSource.ean %}{{ lightSource.ean }}{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td class="basicCodeList" title="{{ '$.messages.tooltip_msg' | trans }}">{% if lightSource.basicCode %}{{ lightSource.basicCode }}{% else %}
+                                                            {{ empty_text }}{% endif %}</td>
+                                                        <td>{% if lightSource.luminousFlux %}{{ lightSource.luminousFlux }} lm{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td>{% if lightSource.lifetime %}{{ findLifetime(lightSource.lifetime) }}{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td>{% if lightSource.shatterproof %}{{ '$.yes_no.yes' | trans }}{% else %}
+                                                                {{ '$.yes_no.no' | trans }}{% endif %}</td>
+                                                        <td>{% if lightSource.guarantee %}{{ findGuarantee(lightSource.guarantee) | trans }}{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td>{% if lightSource.power %}{{ findWattage(lightSource.power) }}{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td>{% if lightSource.colorTemperature %}{{ findColorTemperature(lightSource.colorTemperature) }}{% else %}
+                                                                {{ empty_text }}{% endif %}</td>
+                                                        <td style="width:180px;"><a href="{{ path('create_pdf', {id: lightSource.id, ballast_id: ballast.id}) }}" class="sub_donwload_link" target="_blank">{{ '$.buttons.downloadPdf' | trans }}</a></td>
+                                                    </tr>
+                                                    {% if remark %}
+                                                        <tr>
+                                                            <td colspan="10" style="padding: 0.3rem 0.3rem 0.3rem 1rem; text-align: left; font-size: 10px; border-top: 1px #FFFFFF solid;">§ {{ remark }}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                </tbody>
+                                            </table>
+                                            <a href="{{ path('create_pdf_for_table', {id: ballast.id}) }}" class="downloadTableButton" target="_blank">{{ '$.buttons.tableDownload' | trans }}</a>
+                                        </div>
+
+                                        {% else %}
+                                            <p>{{ '$.no_results.long_message' | trans }}</p>
+                                        {% endif %}
+
+                                        {% if incompatibleLightSources %}
+                                        <a class="a-link -is-button uncompatible" title="" href="{{ path('incompatible_light_sources', { 'id': ballast.id }) }}">
+                                            <span class="caption">{{ '$.list.incompatible_light_sources' | trans }}</span>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{#    <script>#}
+{#        var colors = ['#ffe0d4', '#ffc2a9'];#}
+{#        var active = 0;#}
+{#        setInterval(function(){#}
+{#            document.querySelector('p').style.background = colors[active];#}
+{#            active++;#}
+{#            if (active == colors.length) active = 0;#}
+{#        }, 2000);#}
+{#    </script>#}
+
+
+    <script>
+        $(function() {
+            $(".basicCodeList").tooltip();
+        });
+    </script>
+
+{% endblock %}

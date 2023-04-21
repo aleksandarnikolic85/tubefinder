@@ -1,0 +1,10 @@
+{% extends 'pdf_layouts/pdf_header_layout.html.twig' %}
+{% block content %}
+<header id="pdf_header">
+    <div class="logo-header" id="logoHeader">
+        <img src="{{ app.request.schemeAndHttpHost }}{{ asset('assets/images/ledvance-logo-orange.jpg') }}">
+{#        <img src="{{ app.request.schemeAndHttpHost ~ asset('assets/images/ledvance-logo-orange.jpg') }}">#}
+{#        <img src="{{ app.request.schemeAndHttpHost ~ asset('assets/images/ledvance-logo-orange.jpg') }}">#}
+    </div>
+</header>
+{% endblock %}

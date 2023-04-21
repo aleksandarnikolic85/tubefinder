@@ -1,0 +1,53 @@
+{% extends 'pdf_layouts/pdf_content_layout.html.twig' %}
+{% block content %}
+{#    <hr />#}
+    <h1>{{ '$.pdf_titles.app_name' | trans }}</h1>
+
+    <h2><strong>{{ '$.pdf_text.compatible_ballast' | trans }}</strong></h2>
+    <hr />
+
+    <h1><strong>{{ ballast.productName }}</strong></h1>
+
+    <h2>{{ '$.pdf_text.your_substitube_on_hand' | trans }}: <br/> {{ lightSource.productName | upper }} <br/> {{ '$.product.ean' | trans }}: {{ lightSource.ean }}{% if lightSource.basicCode %}, {{ '$.product.bc' | trans }}: {{ lightSource.basicCode }}{% endif %}</h2>
+
+    <div class="important_text_pdf"><p>{{ '$.messages.important_info' | trans | nl2br }}</p></div>
+
+    <h5>{{ '$.pdf_text.compatible_ballast' | trans }}</h5>
+
+    {% set remark = checkRemarks(lightSource, ballast, app.request.locale)  %}
+
+    <table class="table-one">
+        <tbody>
+            <tr>
+                <td>{{ '$.product.brand' | trans }}</td>
+                <td>{% if ballast.brand %}{{ ballast.brand }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.product_name' | trans }}</td>
+                <td>{{ ballast.productName }}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.ref_no' | trans }}</td>
+                <td>{% if ballast.refNo %}{{ballast.refNo }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.amount_of_lamps' | trans }}</td>
+                <td>{% if ballast.lampAmount %}{{ ballast.lampAmount }} {% endif %}</td>
+            </tr>
+
+            {% if remark %}
+                <tr>
+                    <td colspan="2" style="padding: 0.3rem 0.3rem 0.3rem 1rem; text-align: left; font-size: 10px; border-top: 1px #FFFFFF solid;">§ {{ remark }}</td>
+                </tr>
+            {% endif %}
+
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <hr />
+
+{#    <p>{{ '$.pdf_text.warning' | trans }}</p>#}
+    <p>{{ '$.pdf_text.disclaimer' | trans }}</p>
+
+{% endblock %}

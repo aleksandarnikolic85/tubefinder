@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ '$.list.compatible_ballasts' | trans }}{% endblock %}
+
+{% block content %}
+
+<section class="t-section" id="">
+    <div class="o-content-modul   ">
+        <div class="container">
+            <div class="row  _justify-center">
+                <div class="col ">
+
+                    {% if lightSource %}
+
+                    <h3 class="headline -size-large -bold sub_gray">{{ lightSource.productName }} - {{ lightSource.ean }}</h3>
+                    <div class="-wrapper wrapper-relative">
+
+                        <p class="important_text">{{ '$.messages.important_info' | trans | nl2br }}</p>
+
+                        <label for="packaging_information">
+                            <h3 class="headline -size-small -medium">{{ '$.list.compatible_ballasts' | trans }}</h3>
+                        </label>
+
+                        {% if lightSource.scenario == 'EM' %}
+                            <p style="margin-bottom: 20px;">{{ '$.scenario_text.scenario_em' | trans }}</p>
+                        {% elseif lightSource.scenario == 'CONNECTED'%}
+                            <p style="margin-bottom: 20px;">{{ '$.scenario_text.scenario_em' | trans }}</p>
+                        {% elseif lightSource.scenario == 'AC'%}
+                            <p style="margin-bottom: 20px;">{{ '$.scenario_text.scenario_ac' | trans }}</p>
+                        {% elseif lightSource.scenario == 'T8U'%}
+                            <p style="margin-bottom: 20px;">{{ '$.scenario_text.scenario_t8u' | trans }}</p>
+                        {% elseif lightSource.scenario == 'T5U'%}
+                            <p style="margin-bottom: 20px;">{{ '$.scenario_text.scenario_t5u' | trans }}</p>
+                        {% endif %}
+
+                        {% if ballasts %}
+                        <div class="-body">
+                            <div class="o-table-modul">
+                                <div class="m-tables -is-highlight">
+                                    <div class="a-table " data-require="clickableTableRow">
+                                        <table id="packaging-information">
+                                            <thead>
+                                            <tr>
+                                                <th>{{'$.product.brand' | trans }}</th>
+                                                <th>{{'$.product.product_name' | trans }}</th>
+                                                <th>{{'$.product.ref_no' | trans }}</th>
+                                                <th>{{'$.product.lamps_on_ballast' | trans }}</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            {% set empty_text = "N/A" %}
+
+                                            {% for ballast in ballasts %}
+
+                                                {% set remark = checkRemarks(lightSource, ballast, app.request.locale)  %}
+
+                                                <tr data-id="{{ ballast.id }}">
+                                                    <td>{{ ballast.brand }}</td>
+                                                    <td>{{ ballast.productName }}</td>
+                                                    <td>{% if ballast.refNo != 'null' %}{{ ballast.refNo }}{% else %}{{ empty_text }}{% endif %}</td>
+                                                    <td>{{ ballast.lampAmount }}</td>
+                                                    <td style="width:180px;"><a href="{{ path('create_pdf_for_ballast', {id: ballast.id, lightSourceId: lightSource.id}) }}" class="sub_donwload_link" target="_blank">{{ '$.buttons.downloadPdf' | trans }}</a></td>
+                                                </tr>
+                                                {% if remark %}
+                                                    <tr>
+                                                        <td colspan="10" style="padding: 0.3rem 0.3rem 0.3rem 1rem; text-align: left; font-size: 10px; border-top: 1px #FFFFFF solid;">§ {{ remark }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    {% if incompatibleBallasts %}
+                                    <a class="a-link -is-button uncompatible" title="" href="{{ path('incompatible_ballasts', { 'id': lightSource.id }) }}">
+                                        <span class="caption">{{ '$.list.incompatible_ballasts' | trans }}</span>
+                                    </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                    </div>
+
+                    {% else %}
+                        <h1>This light source does not exist! Please check your data!</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";define(["docCookies"],function(a){"use strict";return{init:function(b){var c=b.dataset.cookie;b.addEventListener("click",function(){var b=new Date(new Date().getTime()+31536000000);a.setItem(ldv_gc.split_cookie,c,b,"/")},!0)}}});

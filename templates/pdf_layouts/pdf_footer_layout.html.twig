@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title of the PDF</title>
+    <style>
+        @font-face {
+            font-family: PT Sans;
+            {#src: url('{{ app.request.schemeAndHttpHost }}{{ asset('static/datasheet/fonts/pt-sans-v11-latin-regular.ttf') }}') format("truetype");#}
+            {#src: url('{{ schemeAndHttpHost }}{{ asset('static/datasheet/fonts/pt-sans-v11-latin-regular.ttf') }}') format("truetype");#}
+            src: url(https://tubefinder.ledvance.com/static/datasheet/fonts/pt-sans-v11-latin-regular.ttf) format("truetype");
+            font-style: normal;
+        }
+
+        /*body {*/
+        /*    font-family: MyFont;*/
+        /*}*/
+
+        /*header {*/
+        /*    float: right;*/
+        /*    top: -20px;*/
+        /*}*/
+
+        body {
+            display: block;
+            border: 0;
+            padding: 0 0 0 0;
+            margin: 0;
+            font-family: PT Sans;
+            /*height: 140px;*/
+            float: right;
+        }
+
+        #footer-text {
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 48px;
+        }
+
+        #footer-text > p {
+            font-size: 10px !important;
+            line-height: 10px;
+        }
+
+        .footer_pages {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            width: 400px;
+        }
+
+        #logoFooter {
+            display: inline-block;
+        }
+
+        .footer_logo {
+            float: right;
+        }
+
+        header img {
+            max-width: 240px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0px;
+            margin: 0px;
+            color: #ff6600;
+        }
+
+        /*.domestic-waste {*/
+        /*    display: block;*/
+        /*    width: 58px;*/
+        /*    height: 84px;*/
+        /*    padding: 0 0 15px 0;*/
+        /*    margin: 0;*/
+        /*}*/
+
+        /*.domestic-waste img {*/
+        /*    display: block;*/
+        /*    width: 58px;*/
+        /*    height: 84px;*/
+        /*    padding: 0;*/
+        /*    margin: 0;*/
+        /*}*/
+    </style>
+    <script>
+        var pdfInfo = {};
+        var xx = document.location.search.substring(1).split('&');
+        for (var ii in xx) { var zz = xx[ii].split('=',2); pdfInfo[zz[0]] = unescape(zz[1]); }
+
+        function getPdfInfo() {
+            var page = pdfInfo.page || 1;
+            var pageCount = pdfInfo.topage || 1;
+            document.getElementById('pdfkit_page_current').textContent = page;
+            document.getElementById('pdfkit_page_count').textContent = pageCount;
+
+            var vars = {};
+            var x = document.location.search.substring(1).split('&');
+            for (var i in x) {
+                var z = x[i].split('=', 2);
+                vars[z[0]] = unescape(z[1]);
+            }
+            var x = ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection'];
+
+            for (var i in x) {
+                var y = document.getElementsByClassName(x[i]);
+                for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+
+                if (vars['page'] == 1) {
+                    document.getElementById("domesticWaste").style.display = 'block';
+                } else {
+                    document.getElementById("domesticWaste").style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="getPdfInfo()"  style=" border-top: 1px #FF6600 solid; width: 100%;">
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

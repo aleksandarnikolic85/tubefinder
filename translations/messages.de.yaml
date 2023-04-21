@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Eingabe von EAN / Basic Code / Ref. Nr. oder Produktname
+        advanced_search: Erweiterte Suche
+        search_button: Suche
+        lamp_type: Lampen Typ
+        length: Länge
+        wattage: Wattage
+        color_temperature: Farbtemperatur
+    product:
+        light_sources: Lichtquellen
+        ballasts: Vorschaltgerät
+        ean: EAN
+        bc: Basic Code
+        conventional_power: Leistung für herkömmliche Technologie
+        power: Leistung
+        luminous_flux: Lichtstrom
+        luminous_efficacy: Lichtausbeute
+        color_temperature: Farbtemperatur
+        compatible_applications: Kompatible Anwendungsbereiche
+        ref_no: Ref. No.
+        brand: Marke
+        amount_of_lamps: Anzahl Lampen
+        show_product_details_link: Produktdetails anzeigen
+        close_product_details_link: Produktdetails schließen
+        shatterproof: Splitterschutz
+        product_name: Produktbezeichnung
+        lifetime: Lebensdauer
+        guarantee: Garantie
+        low_flicker: Flimmerarm
+        eek: Energieeffizienzklasse
+        length: Länge
+        lamp_type: Lampen Typ
+        lamps_on_ballast: Lampen am Vorschaltgerät
+    application:
+        industry: Industrie
+        warehouse: Lager
+        car_park: Parken
+        retail: Einzelhandel
+        food_display: Lebensmittelpräsentation
+        office: Büro
+        residential: Privater Wohnbereich
+        outdoor: Aussenbereich / öffentlicher Verkehr
+        public_building: Öffentliches Gebäude / Sport und Freizeit
+    list:
+        compatible_ballasts: Kompatible Vorschaltgeräte
+        incompatible_ballasts: Inkompatible Vorschaltgeräte
+        compatible_light_sources: Kompatible Lichtquellen
+        incompatible_light_sources: Inkompatible Lichtquellen
+    messages:
+        important_info: "Bitte beachten Sie: Der Produktname und die Referenznummer Ihres Vorschaltgeräts müssen mit dem Produktnamen und der Referenznummer dieses ausgewählten Vorschaltgeräts identisch sein. \n
+        Es ist zwingend erforderlich, OSRAM LED Tubes nur mit einem kompatiblen Vorschaltgerät zu betreiben. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung bei der Verwendung von Vorschaltgeräten, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder bei der Verwendung von Nachfolgemodellen/anderen Referenznummern geprüfter Vorschaltgeräte."
+        tooltip_msg: Den Basic Code finden Sie auf Ihrer SubstiTUBE.
+        empty_results_ballast: Wenn das vorhandene Vorschaltgerät nicht aufgeführt ist, wurde es nicht für die Lichtquelle getestet. Bitte setzen Sie sich mit unserem Kundensupport in Verbindung.
+        empty_results_light_sources: Wenn die vorhandene Lichtquelle nicht aufgelistet ist, wurde sie nicht für das Vorschaltgerät getestet. Bitte setzen Sie sich mit unserem Kundendienst in Verbindung.
+        guarantee_message: Weitere Informationen und die genauen Garantiebedingungen finden Sie unter www.ledvance.de/garantie.
+    footer:
+        text: LEDVANCE ist Lizenznehmer der Produktmarke OSRAM für Lampen im Bereich Allgemeinbeleuchtung.
+    guarantee:
+        three_years: 3 Jahre
+        five_years: 5 Jahre
+    yes_no:
+        yes: Ja
+        no: Nein
+        na: "N/A"
+    buttons:
+        downloadPdf: Download PDF
+        tableDownload: Download PDF mit allen Ergebnissen
+    pdf_titles:
+        techincal_data: Technische Daten
+        summary_title: Zusammenfassung Ihrer ausgewählten OSRAM SubstiTUBE
+        summary_title_list: Kompatible OSRAM SubstiTUBES
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Seite
+        page_of: von
+        copiright: "© 2021, LEDVANCE GmbH. All rights reserved."
+    pdf_text:
+        your_ecg_on_hand: Ihr vorhandenes Vorschaltgerät
+        your_substitube_on_hand: Ihre vorhandene OSRAM SubstiTUBE
+        compatible_osram_substitube: Kompatible OSRAM SubstiTUBE
+        warning: "Warnung: OSRAM LED-Röhren dürfen nur mit einem kompatiblen Vorschaltgerät betrieben werden. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung, wenn Vorschaltgeräte verwendet werden, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder wenn Nachfolgemodelle/andere Referenznummern von geprüften Vorschaltgeräten verwendet werden."
+        disclaimer: "Haftungsausschluss: Änderungen ohne Vorankündigung vorbehalten. Irrtümer und Auslassungen sind vorbehalten."
+        compatible_lights: Kompatible OSRAM SubstiTUBES
+        compatible_ballast: Kompatible Vorschaltgeräte
+    home:
+        title: Bitte geben Sie die Daten Ihrer SubstiTUBE oder Ihres Vorschaltgeräts in das Suchfeld ein. Sie finden diese Informationen auf Ihrem Vorschaltgerät oder Ihrer SubstiTUBE aufgedruckt. Kompatible Produkte werden nach der Suche angezeigt und können ausgewählt werden.
+        imprint: Impressum
+        termsOfUse: Nutzungsbedingungen
+        privacyPolicy: Datenschutzbestimmungen
+        cookiePolicy: Cookie-Richtlinie
+        ledvanceWorldwide: LEDVANCE weltweit
+        contact: Kontakt
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Alle Rechte vorbehalten."
+    no_results:
+        short_message: Kein Suchergebnis.
+        long_message: "Kein Suchergebnis. \n \n
+        Wenn das vorhandene EVG nicht aufgeführt ist, wurde es nicht für die Lampe getestet. Bitte setzen Sie sich mit unserem Kundendienst in Verbindung. KVG/VVG sind immer kompatibel mit den SubstiTUBE EM and UNIVERSAL Produkten."
+    scenario_text:
+        scenario_em: Betrieb am KVG/VVG und Netzspannung (AC). Kompatibilitätsprüfung für KVG/VVG nicht erforderlich.
+        scenario_ac: Betrieb an Netzspannung (AC).
+        scenario_t8u: Betrieb auch am KVG/VVG und Netzspannung (AC). Kompatibilitätsprüfung für KVG/VVG nicht erforderlich..
+        scenario_t5u: Betrieb auch an Netzspannung (AC).

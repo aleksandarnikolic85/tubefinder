@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Escriba su EAN / Código básico / Referencia o nombre del producto
+        advanced_search: Búsqueda Avanzada
+        search_button: Buscar
+        lamp_type: Tipo de lámpara
+        length: Largo
+        wattage: Potencia
+        color_temperature: Temperatura del color
+    product:
+        light_sources: Fuentes de luz
+        ballasts: Balastos
+        ean: EAN
+        bc: Código básico
+        conventional_power: Potencia convencional
+        power: Potencia
+        luminous_flux: Flujo luminoso
+        luminous_efficacy: Eficacia luminosa
+        color_temperature: Temperatura del color
+        compatible_applications: Aplicaciones compatibles
+        ref_no: Nº referencia
+        brand: Marca
+        amount_of_lamps: Cantidad de lámparas
+        show_product_details_link: Mostrar detalles del producto
+        close_product_details_link: Cerrar detalles del producto
+        shatterproof: Inastillable
+        product_name: Nombre del producto
+        lifetime: Vida útil
+        guarantee: Garantía
+        low_flicker: Bajo flickering
+        eek: Clase de eficiencia energética
+        length: Largo
+        lamp_type: Tipo de lámpara
+        lamps_on_ballast: Lámparas en balasto
+    application:
+        industry: Industria
+        warehouse: Almacenes
+        car_park: Parkings
+        retail: Comercios
+        food_display: Exhibición de comida
+        office: Oficinas
+        residential: Residencial
+        outdoor: transporte público / al aire libre
+        public_building: edificio público / deportes y ocio
+    list:
+        compatible_ballasts: Balastos compatibles
+        incompatible_ballasts: Balastos incompatibles
+        compatible_light_sources: Fuentes de luz compatibles
+        incompatible_light_sources: Fuentes de luz incompatibles
+    messages:
+        important_info: "Ten en cuenta: el nombre del producto y el número de referencia de su balasto deben ser idénticos al nombre del producto y al número de referencia de este balasto seleccionado. \n
+                        Es obligatorio operar los tubos LED OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía o responsabilidad cuando se utilizan balastos no mencionados, marcados como balastos no compatibles o cuando se utilizan modelos sucesores / diferentes con números de referencia de balastos probados."
+        tooltip_msg: Puede encontrar el código básico en su SubstiTUBE.
+        empty_results_ballast: Si el balasto existente no figura en la lista, no se ha probado para la fuente de luz. Ponte en contacto con nuestro servicio de atención al cliente.
+        empty_results_light_sources: Si la fuente de luz existente no figura en la lista, no se ha probado para el balasto. Ponte en contacto con nuestro servicio de atención al cliente.
+        guarantee_message: Encontrarás más información y los términos y condiciones exactos de la garantía en www.ledvance.es/garantias.
+    footer:
+        text: LEDVANCE dispone de licencia de comercialización para lámparas de iluminación general marca OSRAM.
+    guarantee:
+        three_years: 3 años
+        five_years: 5 años
+    yes_no:
+        yes: Sí
+        no: No
+        na: "N/A"
+    buttons:
+        downloadPdf: Descargar PDF
+        tableDownload: Descarga PDF con todos los resultados
+    pdf_titles:
+        techincal_data: Datos técnicos
+        summary_title: Resumen del tubo SubstiTUBE marca OSRAM seleccionado
+        summary_title_list: Tubos SubstiTUBE marca OSRAM compatibles
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Página
+        page_of: de
+        copiright: "© 2021, LEDVANCE GmbH. Todos los derechos reservados."
+    pdf_text:
+        your_ecg_on_hand: Tu balasto a mano
+        your_substitube_on_hand: Tu tubo SubstiTUBE marca OSRAM a mano
+        compatible_osram_substitube: Tubo SubstiTUBE marca OSRAM compatible
+        warning: "Advertencia: Es obligatorio operar los Tubos LED marca OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía u obligación cuando se utilizan balastos no mencionados, marcados como no compatibles o cuando se utilizan modelos sucesores / modelos con referencia diferentes a los balastos probados."
+        disclaimer: "Descargo de responsabilidad: sujeto a cambios sin previo aviso. Se exceptúan errores y omisiones."
+        compatible_lights: Tubos SubstiTUBE marca OSRAM compatibles
+        compatible_ballast: Balasto compatible
+    home:
+        title: Introducelos datos de tu tubo SubstiTUBE o balasto en el campo de búsqueda. Encontrarás esta información impresa en el balasto o tubo. Los productos compatibles se mostrarán después de la búsqueda y se pueden seleccionar.
+        imprint: Imprimir
+        termsOfUse: Condiciones de uso
+        privacyPolicy: Política de privacidad
+        cookiePolicy: Política de cookies
+        ledvanceWorldwide: LEDVANCE en todo el mundo
+        contact: Contacto
+        allRightsReserved: "© 2023, LEDVANCE S.A.U. Todos los derechos reservados."
+    no_results:
+        short_message: Sin resultado de búsqueda.
+        long_message: "Sin resultado de búsqueda. \n \n
+        Si el ECE existente no aparece en la lista, no se ha probado para la lámpara. Ponte en contacto con nuestro servicio de atención al cliente. Los ECC siempre son compatibles con los tubos SubstiTUBE EM y UNIVERSAL."
+    scenario_text:
+        scenario_em: Funcionamiento con ECC y directo a red AC. No se requiere verificación de compatibilidad para ECC.
+        scenario_ac: Funcionamiento directo a red AC.
+        scenario_t8u: Funcionamiento también con ECC  y directo a red AC. No se requiere verificación de compatibilidad para ECC.
+        scenario_t5u: Funcionamiento directo a red AC.

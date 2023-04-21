@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Digita il tuo EAN / Codice base / Riferimento codice o Nome del prodotto
+        advanced_search: Ricerca avanzata
+        search_button: Cerca
+        lamp_type: Tipo di lampada
+        length: Lunghezza
+        wattage: Potenza
+        color_temperature: Temperatura di colore
+    product:
+        light_sources: Sorgenti luminose
+        ballasts: Reattori
+        ean: EAN
+        bc: Codice base
+        conventional_power: Potenza sorgente tradizionale
+        power: Potenza
+        luminous_flux: Flusso luminoso
+        luminous_efficacy: Efficienza luminosa
+        color_temperature: Temperatura di colore
+        compatible_applications: Applicazioni compatibili
+        ref_no: Riferimento numero
+        brand: Marca
+        amount_of_lamps: Quantità delle lampade
+        show_product_details_link: Mostra i dettagli dei prodotti
+        close_product_details_link: Chiudi i dettagli dei prodotti
+        shatterproof: Infrangibile
+        product_name: Nome del prodotto
+        lifetime: Durata
+        guarantee: Garanzia
+        low_flicker: Basso sfarfallio
+        eek: Classe di efficienza energetica
+        length: Lunghezza
+        lamp_type: Tipo di lampada
+        lamps_on_ballast: Lampade sul reattore
+    application:
+        industry: industria
+        warehouse: magazzino
+        car_park: parcheggio
+        retail: negozio al dettaglio
+        food_display: esposizioni di cibo
+        office: ufficio
+        residential: residenziale
+        outdoor: outdoor / trasporto pubblico
+        public_building: edificio pubblico / sport e tempo libero
+    list:
+        compatible_ballasts: Reattori compatibili
+        incompatible_ballasts: Reattori incompatibili
+        compatible_light_sources: Sorgenti luminose compatibili
+        incompatible_light_sources: Sorgenti luminose incompatibili
+    messages:
+        important_info: "Nota: il nome del prodotto e il numero di riferimento del tuo reattore devono essere identici al nome del prodotto e al numero di riferimento del reattore selezionato. \n
+            È obbligatorio utilizzare i tubi LED OSRAM solo con un reattore compatibile. LEDVANCE non si assume alcuna responsabilità, garanzia o responsabilità quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/numeri di riferimento diversi di reattori testati."
+        tooltip_msg: Puoi trovare il codice base sul tuo SubstiTUBE.
+        empty_results_ballast: Se il reattore esistente non è in elenco, non è stato testato per la sorgente luminosa. Si prega di mettersi in contatto con il nostro servizio clienti.
+        empty_results_light_sources: Se la sorgente luminosa esistente non è in elenco, non è stata testata per il reattore. Si prega di mettersi in contatto con il nostro servizio clienti.
+        guarantee_message: Per ulteriori informazioni, le condizioni e i termini di garanzia visita il sito https://www.ledvance.it/professionista/servizi/garanzia.
+    footer:
+        text: LEDVANCE è licenziatario del marchio di prodotto OSRAM nell’illuminazione generale per la categoria lampade.
+    guarantee:
+        three_years: 3 anni
+        five_years: 5 anni
+    yes_no:
+        yes: Sì
+        no: No
+        na: "N/A"
+    buttons:
+        downloadPdf: Scarica PDF
+        tableDownload: Scarica PDF con tutti i risultati
+    pdf_titles:
+        techincal_data: Dati tecnici
+        summary_title: Riepilogo dei tubi OSRAM SubstiTUBE selezionati
+        summary_title_list: OSRAM SubstiTUBE compatibili
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Pagina
+        page_of: di
+        copiright: "© 2021, LEDVANCE GmbH. Tutti i diritti sono riservati."
+    pdf_text:
+        your_ecg_on_hand: Il tuo reattore a portata di mano
+        your_substitube_on_hand: Il tuo OSRAM SubstiTUBE a portata di mano
+        compatible_osram_substitube: Tubi OSRAM SubstiTUBE compatibili
+        warning: "Attenzione: è obbligatorio utilizzare i tubi LED OSRAM solo con reattori compatibili. LEDVANCE non si assume alcuna responsabilità, garanzia o obbligo quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/diversi con numero di riferimento di testati zavorre."
+        disclaimer: "Disclaimer: soggetto a modifiche senza preavviso. Salvo errori e omissioni."
+        compatible_lights: Tubi SubstiTUBES OSRAM Compatibili
+        compatible_ballast: Reattore compatibile
+    home:
+        title: Inserisci i dati del tuo SubstiTUBE o reattore nel campo di ricerca. Troverai queste informazioni stampate sul tuo reattore o SubstiTUBE. I prodotti compatibili verranno visualizzati dopo la ricerca e potranno essere selezionati.
+        imprint: Impronta
+        termsOfUse: Termini di utilizzo
+        privacyPolicy: Informativa sulla Privacy
+        cookiePolicy: Gestione dei Cookie
+        ledvanceWorldwide: LEDVANCE in tutto il mondo
+        contact: Contatto
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Tutti i diritti riservati."
+    no_results:
+        short_message: Nessun risultato di ricerca.
+        long_message: "Nessun risultato di ricerca. \n \n
+            Se l’ECG esistente non è in elenco, non è stato testato per la lampada. Contatta il nostro supporto clienti. CCG è sempre compatibile con i prodotti SubstiTUBE EM e UNIVERSAL."
+    scenario_text:
+        scenario_em: Funzionamento per alimentazione convenzionale CCG e rete AC. Il controllo di compatibilità per CCG non è richiesto.
+        scenario_ac: Funzionamento su rete AC.
+        scenario_t8u: Funzionamento anche per alimentazione convenzionale CCG e rete AC. Il controllo di compatibilità per alimentazione CCG non è richiesto.
+        scenario_t5u: Funzionamento anche su rete AC.

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<defs>
+<style>.a{fill:#666;}</style>
+</defs>
+<path class="a" d="M12,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22ZM12,3.1A8.9,8.9,0,1,0,20.9,12,8.9,8.9,0,0,0,12,3.1Z"/>
+<rect class="a" x="11" y="9" width="2.1" height="8.95"/>
+<circle class="a" cx="12" cy="6.9" r="1.1"/>
+</svg>

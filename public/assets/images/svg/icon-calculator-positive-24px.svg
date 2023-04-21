@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<title>calculator_small</title>
+<g data-name="Calculator">
+<g  data-name="Calculator_small">
+<path d="M16,5H8v5h8ZM15,9H9V6h6Z"/>
+<rect x="8" y="11" width="2" height="2"/>
+<rect x="11" y="11" width="2" height="2"/>
+<rect x="14" y="11" width="2" height="2"/>
+<rect x="8" y="14" width="2" height="2"/>
+<rect x="11" y="14" width="2" height="2"/>
+<rect x="14" y="14" width="2" height="2"/>
+<rect x="8" y="17" width="2" height="2"/>
+<rect x="11" y="17" width="2" height="2"/>
+<rect x="14" y="17" width="2" height="2"/>
+<path d="M5,2V22H19V2ZM17.5,20.5H6.5V3.5h11Z"/>
+</g>
+</g>
+</svg>

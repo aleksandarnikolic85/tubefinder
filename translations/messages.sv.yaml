@@ -1,0 +1,103 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Skriv EAN / modellkod / ref. nr. eller produktens namn
+        advanced_search: Avancerad sökning
+        search_button: Sök
+        lamp_type: Lamptyp
+        length: Längd
+        wattage: Wattal
+        color_temperature: Färgtemperatur
+    product:
+        light_sources: Ljuskällor
+        ballasts: Drivdon
+        ean: EAN
+        bc: Modellkod
+        conventional_power: Effekt traditionell motsvarighet
+        power: Effekt
+        luminous_flux: Ljusflöde
+        luminous_efficacy: Ljusutbyte
+        color_temperature: Färgtemperatur
+        compatible_applications: Kompatibla användningsområden
+        ref_no: Ref. nr.
+        brand: Varumärke
+        amount_of_lamps: Antal ljuskällor
+        show_product_details_link: Visa produktinformation
+        close_product_details_link: Stäng produktinformation
+        shatterproof: Splitterskydd
+        product_name: Produktnamn
+        lifetime: Livslängd
+        guarantee: Garanti
+        low_flicker: Lågt flimmer
+        eek: Energieffektivitetsklass
+        length: Längd
+        lamp_type: Lamptyp
+        lamps_on_ballast: Antal ljuskällor per drivdon
+    application:
+        industry: industri
+        warehouse: lager
+        car_park: parkering
+        retail: detaljhandeln
+        food_display: matpresentation
+        office: kontor
+        residential: bostäder
+        outdoor: utomhus / kollektivtrafik
+        public_building: offentliga byggnader / idrottsanläggningar
+    list:
+        compatible_ballasts: Kompatibla drivdon
+        incompatible_ballasts: Ej kompatibla drivdon
+        compatible_light_sources: Kompatibla ljuskällor
+        incompatible_light_sources: Ej kompatibla ljuskällor
+    messages:
+        important_info: "Observera: produktnamnet och referensnumret på drivdonet måste vara identiska med produktnamnet och referensnumret för det valda drivdonet. \n
+        Det är obligatoriskt att endast använda OSRAM LED-lysrör med kompatibla drivdon. LEDVANCE tar inget ansvar eller ger garanti vid användning av drivdon som inte nämns eller som är märkta  icke-kompatibla drivdon eller vid användning av efterföljare eller drivdonsmodeller med annat referensnummer än de testade drivdonen."
+        tooltip_msg: Du hittar identifikationskoden på ditt SubstiTUBE-lysrör.
+        empty_results_ballast: Om det befintliga drivdonet inte är listad har har det inte testats för ljuskällan. Vänligen kontakta vår kundsupport.
+        empty_results_light_sources: Om den befintliga ljuskällan inte är listad har den inte testats för drivdonet. Vänligen kontakta vår kundsupport.
+        guarantee_message: Du hittar mer information och detaljerade garantivillkor på www.ledvance.se/garanti.
+    footer:
+        text: LEDVANCE är produktlicenstagare av varumärket OSRAM för ljuskällor inom allmänbelysning.
+    guarantee:
+        three_years:  3 år
+        five_years:  5 år
+    yes_no:
+        yes: Ja
+        no: Nej
+        na:  "Ej tillgängligt"
+    buttons:
+        downloadPdf: Ladda ner PDF
+        tableDownload: Ladda ner PDF med alla resultat
+    pdf_titles:
+        techincal_data: Teknisk data
+        summary_title: Sammanfattning av din valda OSRAM SubstiTUBE
+        summary_title_list: Kompatibla OSRAM SubstiTUBE-lysrör
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Sida
+        page_of: av
+        copiright: "© 2021, LEDVANCE GmbH. Med ensamrätt."
+    pdf_text:
+        your_ecg_on_hand: Ditt drivdon
+        your_substitube_on_hand: Ditt OSRAM SubstiTUBE-lysrör
+        compatible_osram_substitube: Compatible OSRAM SubstiTUBE
+        warning: "Varning: Det är obligatoriskt att endast använda OSRAM LED-lysrör med kompatibla drivdon. LEDVANCE tar inget ansvar eller ger garanti vid användning av drivdon som inte nämns eller som är märkta  icke-kompatibla drivdon eller vid användning av efterföljare eller drivdonsmodeller med annat referensnummer än de testade drivdonen."
+        disclaimer: "Kan ändras utan föregående meddelande. Med förbehåll för fel och utlämnanden."
+        compatible_lights: Kompatibla OSRAM SubstiTUBE-lysrör
+        compatible_ballast: Kompatibelt drivdon
+    home:
+        title: Ange data för ditt SubstiTUBE-lysrör eller drivdon i sökfältet. Du hittar denna information tryckt på drivdonet eller på SubstiTUBE-lysröret. Kompatibla produkter visas efter sökningen och kan väljas.
+        imprint: Avtryck
+        termsOfUse: Villkor
+        privacyPolicy: Integritetspolicy
+        cookiePolicy: Cookiepolicy
+        ledvanceWorldwide: LEDVANCE över hela världen
+        contact: Kontakt
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Alla rättigheter förbehållna."
+    no_results:
+        short_message: Inget sökresultat.
+        long_message: "Inget sökresultat. \n \n Om det befintliga elektroniska drivdonet inte är listat har det inte testats för lysröret. Ta kontakt med kundsupport. Armaturer med konventionella drivdon är alltid kompatibla med SubstiTUBE EM och UNIVERSAL."
+    scenario_text:
+        scenario_em: För drift med konventionella drivdon och 230 V direktkoppling. Kompatibilitetskontroll för konventionella drivdon behövs inte.
+        scenario_ac: För drift med 230 V direktkoppling.
+        scenario_t8u: Också för drift med konventionella drivdon och 230 V direktkoppling. Kompatibilitetskontroll för konventionella drivdon behövs inte.
+        scenario_t5u: Också för drift med 230 V direktkoppling.

@@ -1,0 +1,159 @@
+{% if lightSources %}
+<section class="t-section" id="light_sources_list">
+  <div class="o-content-modul   ">
+    <div class="container">
+      <div class="row  _justify-center">
+        <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">
+          <ul class="divided-list  js-results-container ">
+
+            <div class="result_title">
+              <p>{{ '$.product.light_sources' | trans | upper }} ({{ noOfLightSources }})</p>
+            </div>
+
+          {% for item in lightSources %}
+            <li id="result_1" {% if noOfLightSources > 1 or noOfBallasts > 1 %} class="more_results"{% endif %}>
+              <article class="m-sr-teaser -global-result row">
+
+{#                  <div class="teaser-main col-12 col-md-8 col-lg-9">#}
+                  <div class="teaser-main col-12">
+                    <a href="{{ path('compatible_ballasts', { 'id': item.id }) }}" class="no-href-decorations">
+                      <header class="teaser-header">
+                        <h4 class="headline _color-orange -size-small -bold">
+                          {{ item.productName }}
+                        </h4>
+                      </header>
+                      <div class="teaser-body">
+                        {%  if item.ean %} <p>{{ '$.product.ean' | trans }}: {{ item.ean }}</p> {% endif %}
+                        {%  if item.basicCode %} <p>{{ '$.product.bc' | trans }}: {{ item.basicCode }}</p> {% endif %}
+                      </div>
+                    </a>
+
+                    <div class="details_container">
+                      <a class="show-more-button" id="show-more-{{ loop.index }}" data-id="{{ loop.index }}">{{ '$.product.show_product_details_link' | trans }}</a>
+                    </div>
+
+                    <div class="additional_product_informations unvisible" id="additional_product_information-{{ loop.index }}">
+                      {% if item.luminousFlux %} <p>{{ '$.product.luminous_flux' | trans }}: <span class="productInformation">{{ item.luminousFlux }} lm</span></p> {% endif %}
+                      {% if item.lifetime %} <p>{{ '$.product.lifetime' | trans }}: <span class="productInformation">{{ findLifetime(item.lifetime) }} </span></p> {% endif %}
+                      {% if item.shatterproof == true %}
+                        <p>{{ '$.product.shatterproof' | trans }}: <span class="productInformation">{{ '$.yes_no.yes' | trans }}</span></p>
+                      {% else %}
+                        <p>{{ '$.product.shatterproof' | trans }}: <span class="productInformation">{{ '$.yes_no.no' | trans }}</span></p>
+                      {% endif %}
+                      {% if item.guarantee %} <p>{{ '$.product.guarantee' | trans }}: <span class="productInformation">{{ findGuarantee(item.guarantee) | trans }}</span></p> {% endif %}
+                      {% if item.power %} <p>{{ '$.product.power' | trans }}: <span class="productInformation">{{ item.power }} W</span></p> {% endif %}
+                      {% if item.colorTemperature %} <p>{{ '$.product.color_temperature' | trans }}: <span class="productInformation">{{ findColorTemperature(item.colorTemperature) }}</span></p> {% endif %}
+                      {% if item.compatibleApplications %}
+                        <p>{{ '$.product.compatible_applications' | trans }}:  <span class="productInformation">{{ compatibleApplicationName(item.compatibleApplications) }}</span></p>
+                      {% endif %}
+
+
+                    </div>
+                </div>
+                <div class="m-area -figure col-12 col-md-4 col-lg-3"></div>
+              </article>
+            </li>
+          {% endfor %}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif  %}
+
+{% if ballasts %}
+  <section class="t-section" id="">
+    <div class="o-content-modul   ">
+      <div class="container">
+        <div class="row  _justify-center">
+          <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">
+            <ul class="divided-list  js-results-container ">
+
+              <div class="result_title">
+                <p>{{ '$.product.ballasts' | trans | upper }} ({{ noOfBallasts }})</p>
+              </div>
+
+              {% for item in ballasts %}
+                <li id="result_1" {% if noOfLightSources > 1 or noOfBallasts > 1  %} class="more_results"{% endif %}>
+                  <article class="m-sr-teaser -global-result row">
+                    <div class="teaser-main col-12 col-md-8 col-lg-9">
+                      <a href="{{ path('compatible_light_sources', { 'id': item.id }) }}" class="no-href-decorations">
+                        <header class="teaser-header">
+                          <h4 class="headline _color-orange -size-small -bold">
+                            {{ item.productName }}
+                          </h4>
+                        </header>
+                        <div class="teaser-body">
+                          {% if item.refNo %}<p>{{ '$.product.ref_no' | trans }}: {{ item.refNo }}</p> {% endif %}
+                        </div>
+                      </a>
+
+                      <div class="details_container">
+                        <a class="show-more-ballast-button" id="show-more-ballast-{{ loop.index }}" data-id="{{ loop.index }}">{{ '$.product.show_product_details_link' | trans }}</a>
+                      </div>
+
+                      <div class="additional_ballast_informations unvisible" id="additional_ballast_information-{{ loop.index }}">
+                        {% if item.brand %}<p>{{ '$.product.brand' | trans }}: <span class="productInformation">{{ item.brand }}</span></p>{% endif %}
+                        {% if item.ean %}<p>{{ '$.product.ean' | trans }}: <span class="productInformation">{{ item.ean }}</span></p>{% endif %}
+                        {% if item.lampAmount %} <p>{{ '$.product.amount_of_lamps' | trans }}: <span class="productInformation">{{ item.lampAmount }}</span></p>{% endif %}
+                      </div>
+                    </div>
+                    <div class="m-area -figure col-12 col-md-4 col-lg-3"></div>
+                  </article>
+                </li>
+              {% endfor %}
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif  %}
+
+{% if noResults %}
+  <section class="t-section" id="no_results">
+    <div class="o-content-modul   ">
+      <div class="container">
+        <div class="row  _justify-center">
+          <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">
+              <h3 class="" style="font-style: italic;">{{ '$.no_results.long_message' | trans | nl2br}}</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+<script>
+  $(".show-more-button").on("click", function() {
+    var id = $(this).data("id");
+    var divId = "#additional_product_information-" + id;
+    if ($(divId).hasClass("unvisible")) {
+      $(divId).fadeIn("slow");
+      $(divId).removeClass("unvisible");
+      $(this).text("{{ '$.product.close_product_details_link' | trans }}");
+    } else {
+      $(divId).fadeOut("slow");
+      $(divId).addClass("unvisible");
+      $(this).text("Show product details");
+    }
+  });
+
+  $(".show-more-ballast-button").on("click", function() {
+    var id = $(this).data("id");
+    var divId = "#additional_ballast_information-" + id;
+    if ($(divId).hasClass("unvisible")) {
+      $(divId).fadeIn("slow");
+      $(divId).removeClass("unvisible");
+      $(this).text("{{ '$.product.close_product_details_link' | trans }}");
+    } else {
+      $(divId).fadeOut("slow");
+      $(divId).addClass("unvisible");
+      $(this).text("Show product details");
+    }
+  });
+</script>

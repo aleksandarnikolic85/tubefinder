@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+{% block content %}
+    <div id="loader"></div>
+    {% include 'home/search_form.html.twig'%}
+    {% include 'home/result_list.html.twig' %}
+    {% include 'home/js/predictive_search.html.twig' %}
+{% endblock %}
+

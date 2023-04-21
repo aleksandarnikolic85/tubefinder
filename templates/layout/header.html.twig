@@ -1,0 +1,50 @@
+<header class="o-header"  data-require="headerController" >
+  <div class="m-flyout-backdrop" id="flyout-backdrop"></div>
+  <div class="m-flyout-backdrop-search" id="flyout-backdrop-search"></div>
+  <div class="_flex-row _flex-wrap">
+    <div class="m-logo">
+      <a href="{{ path('home') }}">
+        <div class="a-picture -logo" >
+          <img
+                  src="{{ asset('assets/images/ledvance-logo.png') }}"
+                  alt="Ledvance"
+                  title="ledvance"
+          />
+        </div>
+
+      </a>
+    </div>
+    <div class="m-header-container -large _hide-within-lg">
+      <div class="m-lang-select" data-require="languageSelect">
+        <div class="m-button-dropdown" id="sub_m-button-dropdown">
+          <div class="dropdown-options" id="sub_dropdown-options">
+            <ul style="overflow-x: auto;">
+              {% for key,value in getAvailableLanguages()|sort %}
+                <li><a href="{{ path('home', { '_locale': key} ) }}" data-value="{{ key }}">{{ value }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <a class="dropdown-indicator">
+            <i class="a-icon icon-world-europe-positive-24px -color-white " title="Search">
+              <svg preserveAspectRatio="xMaxYMin">
+                <use xlink:href="/static/images/svg/sprite.svg#icon-world-europe-positive-24px"></use>
+              </svg>
+            </i>
+            <span class="text-indicator">{{ findLanguageName(app.request.locale) }}</span><i class="triangle "></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(document).on( "click", ".dropdown-indicator", function() {
+    if($('#sub_dropdown-options').is(":visible")) {
+      $('#sub_dropdown-options').css('display', 'none');
+    } else {
+      $('#sub_dropdown-options').css('display', 'block');
+    }
+  });
+</script>

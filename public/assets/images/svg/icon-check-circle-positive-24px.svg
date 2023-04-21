@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<title>check_check_in_circle_small</title>
+<g data-name="Check">
+<g data-name="Check_Circle">
+<g  fill-rule="evenodd" data-name="Check_Circle_small">
+<path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18.89A8.89,8.89,0,1,1,20.89,12,8.89,8.89,0,0,1,12,20.89Z"/>
+<polygon points="10.98 14.41 8.19 11.72 7.5 12.43 10.97 15.78 17.14 9.9 16.45 9.19"/>
+</g>
+</g>
+</g>
+</svg>

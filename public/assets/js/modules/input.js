@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";define([],function(){"use strict";function a(a){return Object.freeze({isDirty:function(){return a.defaultValue!==a.value},isNotEmpty:function(){return!!a.value},isValid:function(){return a.validity.valid}})}return{init:function(b){a(b)},Input:a,OPTIONS:{states:{valid:{class:"-is-valid"},invalid:{class:"-is-invalid"},dirty:{class:"-is-dirty"},empty:{class:"-is-empty"}},events:{dirtied:"dirtied"}}}});

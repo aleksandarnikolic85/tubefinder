@@ -1,0 +1,190 @@
+<section class="t-section" id="search_form">
+  <div class="o-content-modul   ">
+    <div class="container">
+      <div class="row  _justify-center">
+        <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">
+          <div>
+            <h3 style="color: #ff6600">{{ '$.home.title' | trans }}</h3>
+          </div>
+          <div class="search" id="search_field">
+            {{ form(form) }}
+            <div id="suggesstion-box" style="display: none;"></div>
+            <div id="advanced_options" class="form-group col form-inline col-8">
+              <div class="row">
+                <div class="col-sm-3 col-12">
+                  <select name="lamp_type" id="lamp_type">
+                    <option value=""  selected>{{ '$.search_form.lamp_type' | trans }}</option>
+                    {% for key, value in lampTypes %}
+                        <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                <div class="col-sm-3 col-12">
+                  <select name="length" id="length">
+                    <option value=""  selected>{{ '$.search_form.length' | trans }}</option>
+                    {% for key, value in lengthTypes %}
+                      <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                <div class="col-sm-3 col-12">
+                  <select name="wattage" id="wattage" >
+                    <option value=""  selected>{{ '$.search_form.wattage' | trans }}</option>
+                    {% for key, value in wattageTypes %}
+                      <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                <div class="col-sm-3 col-12">
+                  <select name="color_temperature" id="color_temperature" >
+                    <option value=""  selected>{{ '$.search_form.color_temperature' | trans }}</option>
+                    {% for key, value in colorTemperatureTypes %}
+                      <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+            </div>
+            <a id="advanced_search_text" class="a-link">{{ '$.search_form.advanced_search' | trans }} &#8594;</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function(){
+    $("#advanced_search_text").click(function(){
+      if($("#advanced_search_text").hasClass("opened")) {
+        $("#advanced_options").fadeOut("slow");
+        $("#advanced_search_text").removeClass("opened");
+        $("#substitube_search_search").prop('disabled', false);
+        $("#substitube_search_submit").prop('disabled', false);
+      } else {
+        $("#advanced_options").fadeIn("slow");
+        $("#advanced_search_text").addClass("opened");
+        $("#substitube_search_search").prop('disabled', true);
+        $("#substitube_search_submit").prop('disabled', true);
+      }
+    });
+
+    $(document).ready(function(){
+
+      $("#substitube_search_search").keyup(function(){
+
+        if($(this).val().length >= 2) {
+          $.ajax({
+            type: "POST",
+            url: '{{ path('predefined_search') }}',
+            dataType: 'json',
+            data: {
+              term: $('#substitube_search_search').val()
+            },
+            beforeSend: function(){
+              $("#substitube_search_search").css("background","#FFF url(/assets/images/spinner.svg) no-repeat");
+              $("#substitube_search_search").css("background-position","right");
+              $("#substitube_search_search").css("background-size","50px 50px");
+            },
+            success: function(data){
+              if(data.success == true) {
+                $("#suggesstion-box").show();
+                $("#suggesstion-box").html(data.html);
+                $("#substitube_search_search").css("background","#FFF");
+              }
+            }
+          });
+        } else {
+          $("#substitube_search_search").css("background","#FFF");
+          $("#suggesstion-box").hide();
+        }
+
+      });
+
+      $(document).mouseup(function(e)
+      {
+        var container = $("#suggesstion-box");
+
+        if (!container.is(e.target) && container.has(e.target).length === 0)
+        {
+          container.hide();
+        }
+      });
+
+      $(document).on('click', '#suggesstion-box li', function (event) {
+        let value = $(this).text();
+        $('#substitube_search_search').val(value);
+        $("#suggesstion-box").hide();
+      });
+
+      $(document).on('click', '#advanced_search_text', function (event) {
+        if($('#substitube_search_search').length) {
+          $("#no_results").remove();
+        }
+      });
+
+      // $(document).on('click', 'select:disabled', function (event) {
+      //   alert("Hi");
+      // });
+
+
+      $('select').on('change', function() {
+
+        var lampType = $('#lamp_type').val();
+        var length = $('#length').val();
+        var wattage = $('#wattage').val();
+        var colorTemperature = $('#color_temperature').val();
+
+        $.ajax({
+          type: "POST",
+          url: '{{ path('advanced_search') }}',
+          dataType: 'json',
+          data: {
+            lampType: lampType,
+            length: length,
+            wattage: wattage,
+            colorTemperature: colorTemperature,
+          },
+          beforeSend: function(){
+            $("#loader").css("display", "block");
+          },
+          success: function(data){
+            if(data.success == true) {
+
+              $("#loader").css("display", "none");
+
+              if($('#light_sources_list').length) {
+                $('#light_sources_list').remove();
+              }
+
+              if(data.results) {
+                $('#search_form').append(data.results);
+              }
+
+              var lampTypeOptions = $("#lamp_type");
+              lampTypeOptions.empty();
+              lampTypeOptions.append(data.lampTypeHtml);
+
+              var lengthOptions = $("#length");
+              lengthOptions.empty();
+              lengthOptions.append(data.lengthHtml);
+
+              var wattageOptions = $("#wattage");
+              wattageOptions.empty();
+              wattageOptions.append(data.wattageHtml);
+
+              var colorTemperatureOptions = $("#color_temperature");
+              colorTemperatureOptions.empty();
+              colorTemperatureOptions.append(data.colorTemperatureHtml);
+            }
+          }
+        });
+
+      });
+    });
+  });
+</script>

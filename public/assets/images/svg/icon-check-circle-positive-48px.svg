@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<title>check_check_in_circle_big</title>
+<g data-name="Check">
+<g data-name="Check_Circle">
+<g  fill-rule="evenodd" data-name="Check_Circle_big">
+<path d="M24,4A20,20,0,1,0,44,24,20,20,0,0,0,24,4Zm0,37.78A17.78,17.78,0,1,1,41.78,24,17.78,17.78,0,0,1,24,41.78Z"/>
+<polygon points="21.95 28.82 16.37 23.44 15 24.86 21.94 31.55 34.27 19.81 32.91 18.38"/>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ '$.list.compatible_light_sources' | trans }}</title>
+    <style>
+        @font-face {
+            font-family: PT Sans;
+        {#src: url('{{ app.request.schemeAndHttpHost }}{{ asset('static/datasheet/fonts/pt-sans-v11-latin-regular.ttf') }}') format("truetype");#}
+        {#src: url('{{ schemeAndHttpHost }}{{ asset('static/datasheet/fonts/pt-sans-v11-latin-regular.ttf') }}') format("truetype");#}
+            src: url(https://tubefinder.ledvance.com/static/datasheet/fonts/pt-sans-v11-latin-regular.ttf) format("truetype");
+            font-style: normal;
+        }
+
+        body {
+            border: 0;
+            padding: 0;
+            margin: 0 0 100px;
+            font-family: PT Sans;
+        }
+
+        header {
+            height: 60px;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        header img {
+            max-width: 360px;
+        }
+
+        #logoHeader {
+            /*border-bottom: 2px #ff6600 solid;*/
+        }
+
+    </style>
+
+    <script>
+        function subst() {
+            var vars = {};
+            var x = document.location.search.substring(1).split('&');
+            for (var i in x) {
+                var z = x[i].split('=', 2);
+                vars[z[0]] = unescape(z[1]);
+            }
+            var x = ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection'];
+            for (var i in x) {
+                var y = document.getElementsByClassName(x[i]);
+                // for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+                //
+                // if (vars['page'] == 1) { // If page is 1, set FakeHeaders display to none
+                //     document.getElementById("textHeader").style.display = 'none';
+                // } else {
+                //     document.getElementById("logoHeader").style.display = 'none';
+                // }
+
+                for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+
+                if (vars['page'] > 1) { // If page is 1, set FakeHeaders display to none
+                    document.getElementById("pdf_header").style.display = 'none';
+                } else {
+                    // document.getElementById("textHeader").style.display = 'block';
+                }
+
+            }
+        } setTimeout(getPdfInfo, 2000);
+    </script>
+</head>
+<body onload="subst()">
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Skriv EAN-nr. eller produktnavn
+        advanced_search: Avanceret søgning
+        search_button: Søg
+        lamp_type: Lyskildetype
+        length: Længde
+        wattage: Watt
+        color_temperature: Farvetemperatur
+    product:
+        light_sources: Lyskilder
+        ballasts: Forkoblinger
+        ean: EAN
+        bc: Produktnavn
+        conventional_power: Konventionel forkobling
+        power: Forsyning
+        luminous_flux: Lysstrøm
+        luminous_efficacy: Lysudbytte
+        color_temperature: Farvetemperatur
+        compatible_applications: Sammenlignelige applikationer
+        ref_no: Ref.nr.
+        brand: Brand
+        amount_of_lamps: Antal lyskilder
+        show_product_details_link: Vis produktdetaljer
+        close_product_details_link: Luk produktdetaljer
+        shatterproof: Splintbeskyttet
+        product_name: Produktnavn
+        lifetime: Levetid
+        guarantee: Garanti
+        low_flicker: Lav flimmer
+        eek: Energiklasse
+        length: Længde
+        lamp_type: Lyskildetype
+        lamps_on_ballast: Antal lyskilder på forkoblingen
+    application:
+        industry: Industrien
+        warehouse: Lagerbygninger
+        car_park: Parkeringspladser
+        retail: Butikker
+        food_display: Fødevarebutikker
+        office: Kontorer
+        residential: Hjemmet
+        outdoor: udendørs/offentlig transport
+        public_building: offentlige bygninger/sport & fritid
+    list:
+        compatible_ballasts: Kompatible forkoblinger
+        incompatible_ballasts: Ikke-kompatible forkoblinger
+        compatible_light_sources: Kompatible lyskilder
+        incompatible_light_sources: Ikke-kompatible lyskilder
+    messages:
+        important_info: "Bemærk: produktnavn og reference-nr. på forkoblingen skal være identisk med produktnavnet og reference-nr. på denne valgte forkobling. \n
+        Det er obligatorisk at drive OSRAM LED-rør udelukkende på kompatible forkoblinger. LEDVANCE fralægger sig ansvaret, garantien eller forsikringen når der anvendes forkoblinger der ikke er angivet, markeret som ikke-kompatible forkoblinger eller hvis der anvendes forkoblinger med andre reference-numre modeller af testede forkoblinger."
+        tooltip_msg: Du finder koden på dit SubstiTUBE rør her.
+        empty_results_ballast: Hvis den anvendte forkobling ikke er listet betyder det at den ikke er blevet testet sammen med lyskilden. Kontakt venligst vores kundeservice.
+        empty_results_light_sources: Hvis den anvendte lyskilde ikke er listet, betyder det at den ikke er blevet testet sammen med forkoblingen. Kontakt venligst vores kundeservice.
+        guarantee_message: Du finder yderligere information og vores garantibetingelser på www.ledvance.dk/garanti.
+    footer:
+        text: LEDVANCE is licensee of procuct trademark OSRAM for lamps products in general lighting.
+    guarantee:
+        three_years: 3 år
+        five_years: 5 år
+    yes_no:
+        yes: Ja
+        no: Nej
+        na: "N/A"
+    buttons:
+        downloadPdf: Download PDF
+        tableDownload:  Download PDF med alle resultater
+    pdf_titles:
+        techincal_data: Tekniske data
+        summary_title: Oversigt over dine valgte OSRAM SubstiTUBE rør
+        summary_title_list: Kompatibel med OSRAM SubstiTUBE rør
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Side
+        page_of: af
+        copiright: "© 2021, LEDVANCE GmbH. All rights reserved."
+    pdf_text:
+        your_ecg_on_hand: Din valgte forkobling
+        your_substitube_on_hand: Dit valgte OSRAM SubstiTUBE rør
+        compatible_osram_substitube: Kompatibel OSRAM SubstiTUBE rør
+        warning: "Advarsel: Det er obligatorisk kun at drive OSRAM LED-rør med kompatible forkoblinger. LEDVANCE fralægger sig ansvaret, garantien eller forsikringen når der anvendes forkoblinger der ikke er angivet, markeret som ikke-kompatible forkoblinger eller hvis der anvendes forkoblinger med andre reference-numre modeller af testede forkoblinger."
+        disclaimer: "Ansvarsfraskrivelse: Med forbehold for ændringer uden varsel. Fejl og mangler undtaget."
+        compatible_lights: Kompatible OSRAM SubstiTUBE rør
+        compatible_ballast: Kompatibel forkobling
+    home:
+        title: Venligst angiv data på dit SubstiTUBE rør eller forkobling i søgefeltet. Informationen er printet på forkoblingen eller røret. Kompatible produkter vises efter søgningen og kan herefter vælges.
+        imprint: Aftryk
+        termsOfUse: Vilkår for brug
+        privacyPolicy: Fortrolighedspolitik
+        cookiePolicy: Cookiepolitik
+        ledvanceWorldwide: LEDVANCE på verdensplan
+        contact: Kontakt
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Alle rettigheder forbeholdes."
+    no_results:
+        short_message: Intet søge resultat.
+        long_message: "Intet søge resultat \n\n
+        Hvis den eksisterende elektroniske forkobling ikke fremgår er den ikke blevet testet til lyskilden. Venligst tag kontakt til vores kundeservice. Konventionelle forkoblinger er altid kompatible med SubstiTUBE EM og UNIVERSAL rør."
+    scenario_text:
+        scenario_em: Drift på konventionel forkobling og 230V. Kompatibilitetstjek af den konventionelle forkobling er ikke påkrævet.
+        scenario_ac: Drift på 230V.
+        scenario_t8u: Drift på både konventionel forkobling og 230V. Kompatibilitetstjek af den konventionelle forkobling er ikke påkrævet.
+        scenario_t5u: Drift også på 230V.

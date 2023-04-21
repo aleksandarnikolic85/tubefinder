@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<title>chat_small</title>
+<g data-name="Chat">
+<g  data-name="Chat_small">
+<path d="M20,7H18V9h2v8.59L18.41,16H10V15H8v1a2,2,0,0,0,2,2h7.59L22,22.41V9A2,2,0,0,0,20,7Z"/>
+<path d="M17,12V5a2,2,0,0,0-2-2H5A2,2,0,0,0,3,5V18.41L7.41,14H15A2,2,0,0,0,17,12ZM6.59,12,5,13.59V5H15v7Z"/>
+</g>
+</g>
+</svg>

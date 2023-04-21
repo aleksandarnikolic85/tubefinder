@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<title>checkbox_with_check_big</title>
+<g data-name="Checkbox">
+<g data-name="Checkbox_check">
+<g  data-name="Checkbox_check_big">
+<path d="M8,8V40H40V8ZM6,6H42V42H6Z"/>
+<polygon points="31.35 18.14 21.61 27.42 16.66 22.64 15.43 23.91 21.61 29.86 32.57 19.41" fill-rule="evenodd"/>
+</g>
+</g>
+</g>
+</svg>

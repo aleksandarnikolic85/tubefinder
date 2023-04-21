@@ -1,0 +1,104 @@
+$:
+    ribbon:
+    search_form:
+        label_text: Voer de EAN / Basiscode / Ref. nr. of Productnaam in
+        advanced_search: Geavanceerd zoeken
+        search_button: Zoek
+        lamp_type: Lamptype
+        length: Lengte
+        wattage: Vermogen
+        color_temperature: Kleurtemperatuur
+    product:
+        light_sources: Lichtbronnen
+        ballasts: Voorschakelapparaten
+        ean: EAN
+        bc: Basiscode
+        conventional_power: Vergelijkbaar vermogen
+        power: Vermogen
+        luminous_flux: Lichtstroom
+        luminous_efficacy: Lichtrendement
+        color_temperature: Kleurtemperatuur
+        compatible_applications: Compatibele toepassingen
+        ref_no: Ref. nr.
+        brand: Merk
+        amount_of_lamps: Aantal lampen
+        show_product_details_link: Bekijk productdetails
+        close_product_details_link: Sluit productdetails
+        shatterproof: Splinterbescherming
+        product_name: Productnaam
+        lifetime: Levensduur
+        guarantee: Garantie
+        low_flicker: Lage flikkering
+        eek: Energie-efficiëntieklasse
+        length: Lengte
+        lamp_type: Lamptype
+        lamps_on_ballast: Lampen op voorschakelapparaat
+    application:
+        industry: industrie
+        warehouse: magazijn
+        car_park: parkeerplaats
+        retail: detailhandel
+        food_display: (voedsel)vitrine
+        office: kantoor
+        residential: residentieel
+        outdoor: buiten / openbaar vervoer
+        public_building: openbaar gebouw / sport en vrije tijd
+    list:
+        compatible_ballasts: Compatibele voorschakelapparaten
+        incompatible_ballasts: Niet-compatibele voorschakelapparaten
+        compatible_light_sources: Compatibele lichtbronnen
+        incompatible_light_sources: Niet-compatibele lichtbronnen
+    messages:
+        important_info: "Houd er rekening mee dat de productnaam en het referentienummer van het voorschakelapparaat identiek moet zijn met de productnaam en referentienummer van het geselecteerde voorschakelapparaat. \n
+        Het is verplicht om OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/andere referentienr. modellen van geteste voorschakelapparaten."
+        tooltip_msg: De basiscode staat vermeld op de SubstiTUBE lamp.
+        empty_results_ballast: Als het bestaande voorschakelapparaat niet weergegeven wordt, is het niet getest met de lichtbron. Neem contact op met onze afdeling Technical Support.
+        empty_results_light_sources: Als de bestaande lichtbron niet weergeven wordt, is het niet getest met het voorschakelapparaat. Neem contact op met onze afdeling Technical Support.
+        guarantee_message: Meer informatie en de exacte garantievoorwaarden vindt u op https://www.benelux.ledvance.com/nl/professioneel/services/garantie.
+    footer:
+        text: LEDVANCE is de licentiehouder van handelsmerk OSRAM voor lichtbronnen in algemene verlichting.
+    guarantee:
+        three_years: 3 jaar
+        five_years: 5 jaar
+    yes_no:
+        yes: Ja
+        no: Nee
+        na: n.v.t.
+    buttons:
+        downloadPdf: Download PDF
+        tableDownload: Download PDF met alle resultaten
+    pdf_titles:
+        techincal_data: Technische gegevens
+        summary_title: Samenvatting van de geselecteerde OSRAM SubstiTUBE
+        summary_title_list: Compatibele OSRAM SubstiTUBES
+        app_name: LEDVANCE Tube Finder
+    pdf_footer:
+        page: Pagina
+        page_of: van
+        copiright:  "© 2021, LEDVANCE GmbH. Alle rechten voorbehouden."
+    pdf_text:
+        your_ecg_on_hand: Uw geselecteerde voorschakelapparaat
+        your_substitube_on_hand: Uw geselecteerde OSRAM SubstiTUBE
+        compatible_osram_substitube: Compatibele OSRAM SubstiTUBE
+        warning:  "Waarschuwing: Het is verplicht om OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/ander referentienr. modellen van geteste voorschakelapparaten."
+        disclaimer: "Disclaimer: Onder voorbehoud van verandering zonder kennisgeving. Fouten en drukfouten voorbehouden. "
+        compatible_lights: Compatibele OSRAM SubstiTUBES
+        compatible_ballast: Compatibel voorschakelapparaat
+    home:
+        title: Voer de data van uw SubstiTUBE of voorschakelapparaat in het zoekveld. Deze informatie is te vinden op uw SubstiTUBE of voorschakelapparaat. Compatibele producten worden weergeven en kunnen worden geselecteerd na het zoeken.
+        imprint: Imprint
+        termsOfUse: Gebruiksvoorwaarden
+        privacyPolicy: Privacybeleid
+        cookiePolicy: Cookiebeleid
+        ledvanceWorldwide: LEDVANCE wereldwijd
+        contact: Contact
+        allRightsReserved: "© 2023, LEDVANCE GmbH. Alle rechten voorbehouden."
+    no_results:
+        short_message: Geen zoekresulaten.
+        long_message: "Geen zoekresultaten. \n \n
+        Als het bestaande E-VSA niet in de lijst voorkomt, is het niet op deze LED buis getest. Neem contact op met onze afdeling Customerservices. C-VSA's zijn altijd compatibel met de SubstiTUBE EM en UN producten."
+    scenario_text:
+        scenario_em: Werkt op C-VSA en netspanning. Compatibiliteits-check voor C-VSA niet vereist.
+        scenario_ac: Werkt direct op netspanning.
+        scenario_t8u: Werkt ook op C-VSA en netspanning. Compatibiliteits-check voor C-VSA niet vereist.
+        scenario_t5u: Werkt direct op netspanning.

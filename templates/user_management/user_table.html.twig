@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User management{% endblock %}
+
+{% block content %}
+
+    <section class="t-section" id="">
+        <div class="o-content-modul   ">
+            <div class="container">
+                <div class="row  _justify-center">
+                    {#                <div class="col col-12 col-sm-12 col-lg-8 col-xl-6">#}
+                    <div class="col ">
+                        <h3 class="headline -size-large -bold sub_gray">User preview</h3>
+                        <div class="-wrapper">
+                            <label for="packaging_information">
+                                <h3 class="headline -size-small -medium"><a href="{{ path('app_admin_dashboard_index') }}" style="text-decoration: none; color: #FF6600;">Back to Easy Admin</a></h3>
+                            </label>
+
+                            <a href="{{ path('new_user') }}" class="a-button pull-right button no-bg button-action margin-left submit-btn" style="position: absolute;right: 14px;top: 90px;">Create user</a>
+
+                            <div class="-body">
+                                <div class="o-table-modul">
+                                    <div class="m-tables -is-highlight">
+                                        <div class="a-table " data-require="clickableTableRow">
+                                            <table id="packaging-information">
+                                                <thead>
+                                                <tr>
+                                                    <th>Id</th>
+                                                    <th>Name</th>
+                                                    <th>Surname</th>
+                                                    <th>Email</th>
+                                                    <th>Role</th>
+                                                    <th>Status</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                {% for user in users %}
+                                                    <tr data-id="">
+                                                        <td>{{ user.id }}</td>
+                                                        <td>{{ user.name }}</td>
+                                                        <td>{{ user.surname }}</td>
+                                                        <td>{{ user.email }}</td>
+                                                        <td>{% if "ROLE_ADMIN" in user.roles %}Admin{% else %}User{% endif %}</td>
+                                                        <td>{% if user.active %}Active {% else%}Not active {% endif %}</td>
+                                                        <td><a href="{{ path('edit_user', {id: user.id}) }}">Edit</a></td>
+                                                        <td><a href="{{ path('remove_user', {id: user.id}) }}">Delete</a></td>
+                                                    </tr>
+
+                                                {% endfor %}
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

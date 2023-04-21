@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";define([],function(){"use strict";return{BASE_URL:"https://www.youtube.com/embed/",DEFAULT_PARAMETERS:{autoplay:1,rel:0},parseId:function(a){var b=/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??(v=)?([^#\&\?]*).*/,c=a.match(b);return!!(c&&11===c[c.length-1].length)&&c[c.length-1]}}});

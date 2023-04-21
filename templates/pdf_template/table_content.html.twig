@@ -1,0 +1,96 @@
+{% extends 'pdf_layouts/pdf_content_layout.html.twig' %}
+{% block content %}
+
+    <h1>{{ '$.pdf_titles.app_name' | trans }}</h1>
+
+    <h2><strong>{{ '$.pdf_titles.summary_title_list' | trans }}</strong></h2>
+    <hr />
+
+{#    <h2>{{ '$.pdf_text.your_ecg_on_hand' | trans }}: {{ ballast.brand }} - {{ ballast.productName }} {% if ballast.ean %}- {{ ballast.ean}} {% endif %} {% if ballast.refNo %}- {{ ballast.refNo}} {% endif %}</h2>#}
+
+    <h1><strong>{{ '$.pdf_text.your_ecg_on_hand' | trans }}: <br/> {{ ballast.productName }} {% if ballast.refNo %} - {{ ballast.refNo }}{% endif %}</strong></h1>
+
+    <div class="important_text_pdf"><p>{{ '$.messages.important_info' | trans | nl2br }}</p></div>
+
+    <h5>{{ '$.pdf_text.compatible_lights' | trans  }}</h5>
+
+{#    <hr />#}
+
+    {% for lightSource in lightSources %}
+
+        {% set remark = checkRemarks(lightSource, ballast, app.request.locale)  %}
+
+        <hr />
+
+        <h5><strong>{{ lightSource.productName | upper }}</strong></h5>
+
+        <table class="table-one">
+            <tbody>
+            <tr>
+                <td>{{ '$.product.product_name' | trans }}</td>
+                <td>{% if lightSource.productName %}{{ lightSource.productName }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.ean' | trans }}</td>
+                <td>{{ lightSource.ean }}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.bc' | trans }}</td>
+                <td>{% if lightSource.basicCode %}{{ lightSource.basicCode }}{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.luminous_flux' | trans }}</td>
+                <td>{% if lightSource.luminousFlux %}{{ lightSource.luminousFlux }} lm{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.lifetime' | trans }}</td>
+                <td>{% if lightSource.lifetime %}{{ findLifetime(lightSource.lifetime) }} *{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.shatterproof' | trans }}</td>
+                <td>{% if lightSource.shatterproof %}{{ '$.yes_no.yes' | trans }}{% else %}{{ '$.yes_no.no' | trans }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.power' | trans }}</td>
+                <td>{% if lightSource.power %}{{ findWattage(lightSource.power) }}{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+            <tr>
+                <td>{{ '$.product.color_temperature' | trans }}</td>
+                <td>{% if lightSource.colorTemperature %}{{ findColorTemperature(lightSource.colorTemperature)}}{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+{#            <tr>#}
+{#                <td>{{ '$.product.eek' | trans }}</td>#}
+{#                <td>{% if lightSource.efficiencyClass %}{{ findEEK(lightSource.efficiencyClass) }}{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>#}
+{#            </tr>#}
+            <tr>
+                <td>{{ '$.product.guarantee' | trans }}</td>
+                <td>{% if lightSource.guarantee %}{{ findGuarantee(lightSource.guarantee) | trans }} **{% else %}{{ '$.yes_no.na' | trans }}{% endif %}</td>
+            </tr>
+            {% if lightSource.efficiencyClass %}
+                <tr>
+                    <td>{{ '$.product.eek' | trans }}</td>
+                    {% set eek = findEEK(lightSource.efficiencyClass) %}
+                    {% set path = getEEKIcon(eek) %}
+                    <td><img src="{{ app.request.schemeAndHttpHost ~ path }}" style="width: 60px; padding-top: 6px"></td>
+                </tr>
+            {% endif %}
+            {% if remark %}
+                <tr>
+                    <td colspan="2" style="padding: 0.3rem 0.3rem 0.3rem 1rem; text-align: left; font-size: 10px; border-top: 1px #FFFFFF solid;">§ {{ remark }}</td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+
+        {% if lightSource.lifetime %}<p class="-footnote">* {{ lightSource.lifetimeRem }}</p>{% endif %}
+        {% if lightSource.guarantee %}<p class="-footnote">** {{ '$.messages.guarantee_message' | trans }}</p>{% endif %}
+
+
+    {% endfor %}
+
+    <hr />
+
+{#    <p>{{ '$.pdf_text.warning' | trans }}</p>#}
+    <p>{{ '$.pdf_text.disclaimer' | trans }}</p>
+
+{% endblock %}

@@ -1,0 +1,2 @@
+/*! ledvance-2019 1.3.1-95 17-11-2020 17:11:20 */
+"use strict";define([],function(){return{get:function(a){return new Promise(function(b,c){var d=new XMLHttpRequest;d.open("GET",a),d.onload=function(){200==d.status?b(d.response):c(d)},d.onerror=function(a){c(Error("Network Error: "+a))},d.send()})},post:function(a,b){return new Promise(function(c,d){var e=new XMLHttpRequest;e.open("POST",a),e.onload=function(){200==e.status?c(e.response):d(e)},e.onerror=function(a){d(Error("Network Error: "+a))},e.send(b)})}}});

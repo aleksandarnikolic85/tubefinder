@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="Icons" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<title>avatar_big</title>
+<g data-name="Avatar">
+<g  data-name="Avatar_big">
+<path d="M24,25a9.5,9.5,0,1,0-9.5-9.5A9.51,9.51,0,0,0,24,25ZM24,8a7.5,7.5,0,1,1-7.5,7.5A7.5,7.5,0,0,1,24,8Z"/>
+<path d="M40.87,35.42C40.65,35.11,35.42,28,24,28S7.38,35.11,7.16,35.42L7,35.68V42H41.05V35.68ZM39.05,40H9V36.35C10,35.17,14.76,30,24,30s14.07,5.14,15,6.34Z"/>
+</g>
+</g>
+</svg>

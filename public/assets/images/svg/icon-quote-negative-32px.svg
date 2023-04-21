@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<title>quote_small</title>
+<g data-name="Icons">
+<g data-name="Quote">
+<g data-name="quote_small">
+<circle cx="16" cy="16" r="16"  data-name="circle_bg_small"/>
+</g>
+<path d="m22 11h-3l-2 4v6h6v-6h-3zm-8 0h-3l-2 4v6h6v-6h-3z"  data-name="Quote_small"/>
+</g>
+</g>
+</svg>

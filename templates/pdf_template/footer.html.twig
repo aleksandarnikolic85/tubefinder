@@ -1,0 +1,20 @@
+{% extends 'pdf_layouts/pdf_footer_layout.html.twig' %}
+{% block content %}
+    <footer>
+        <div class="footer_pages">
+            <p>{{'$.pdf_footer.copiright' | trans }}</p>
+            <p><strong>{{ '$.pdf_footer.page'|trans }} <span id="pdfkit_page_current"></span> {{ '$.pdf_footer.page_of'|trans }} <span id="pdfkit_page_count"></span></strong> / {{ "now"|date('d.m.Y') }} </p>
+        </div>
+
+        <div class="footer_logo">
+            <div id="footer-text">
+                <p>{{ '$.footer.text' | trans }}</p>
+            </div>
+            <div class="logo-footer" id="logoFooter">
+                <img src="{{ app.request.schemeAndHttpHost }}{{ asset('assets/images/OSRAM_ProdLogo_CMYK_pos_100_2016-02.jpg') }}" width="200">
+            </div>
+        </div>
+
+
+    </footer>
+{% endblock %}

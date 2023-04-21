@@ -1,0 +1,28 @@
+/*body:not(.ea-content-width-full) .wrapper {*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*body,*/
+/*.content-header,*/
+/*.main-sidebar,*/
+/*.content-header::before,*/
+/*.content-header::after {*/
+/*    background: #ffc2a9;*/
+/*}*/
+
+/*.datagrid thead,*/
+/*.list-pagination {*/
+/*    background: #ffe0d4;*/
+/*}*/
+
+/*.btn {*/
+/*    background: #FF6600;*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background: #ffa37e;*/
+/*}*/
+
+/*.menu-item .active {*/
+/*    color: #FF6600;*/
+/*}*/
