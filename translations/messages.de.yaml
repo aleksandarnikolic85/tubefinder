@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Inkompatible Lichtquellen
     messages:
         important_info: "Bitte beachten Sie: Der Produktname und die Referenznummer Ihres Vorschaltgeräts müssen mit dem Produktnamen und der Referenznummer dieses ausgewählten Vorschaltgeräts identisch sein. \n
-        Es ist zwingend erforderlich, OSRAM LED Tubes nur mit einem kompatiblen Vorschaltgerät zu betreiben. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung bei der Verwendung von Vorschaltgeräten, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder bei der Verwendung von Nachfolgemodellen/anderen Referenznummern geprüfter Vorschaltgeräte."
-        tooltip_msg: Den Basic Code finden Sie auf Ihrer SubstiTUBE.
+        Es ist zwingend erforderlich, LEDVANCE und OSRAM LED Röhren nur mit einem kompatiblen Vorschaltgerät zu betreiben. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung bei der Verwendung von Vorschaltgeräten, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder bei der Verwendung von Nachfolgemodellen/anderen Referenznummern geprüfter Vorschaltgeräte."
+        tooltip_msg: Den Basic Code finden Sie auf Ihrer LED Röhre.
         empty_results_ballast: Wenn das vorhandene Vorschaltgerät nicht aufgeführt ist, wurde es nicht für die Lichtquelle getestet. Bitte setzen Sie sich mit unserem Kundensupport in Verbindung.
         empty_results_light_sources: Wenn die vorhandene Lichtquelle nicht aufgelistet ist, wurde sie nicht für das Vorschaltgerät getestet. Bitte setzen Sie sich mit unserem Kundendienst in Verbindung.
         guarantee_message: Weitere Informationen und die genauen Garantiebedingungen finden Sie unter www.ledvance.de/garantie.
@@ -69,23 +69,23 @@ $:
         tableDownload: Download PDF mit allen Ergebnissen
     pdf_titles:
         techincal_data: Technische Daten
-        summary_title: Zusammenfassung Ihrer ausgewählten OSRAM SubstiTUBE
-        summary_title_list: Kompatible OSRAM SubstiTUBES
+        summary_title: Zusammenfassung Ihrer ausgewählten LED Röhre
+        summary_title_list: Kompatible LED Röhre von LEDVANCE
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Seite
         page_of: von
-        copiright: "© 2021, LEDVANCE GmbH. All rights reserved."
+        copiright: "© 2023, LEDVANCE GmbH. All rights reserved."
     pdf_text:
         your_ecg_on_hand: Ihr vorhandenes Vorschaltgerät
-        your_substitube_on_hand: Ihre vorhandene OSRAM SubstiTUBE
-        compatible_osram_substitube: Kompatible OSRAM SubstiTUBE
-        warning: "Warnung: OSRAM LED-Röhren dürfen nur mit einem kompatiblen Vorschaltgerät betrieben werden. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung, wenn Vorschaltgeräte verwendet werden, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder wenn Nachfolgemodelle/andere Referenznummern von geprüften Vorschaltgeräten verwendet werden."
+        your_substitube_on_hand: Ihre vorhandene LED Röhre
+        compatible_osram_substitube: Kompatible LED Röhre von LEDVANCE
+        warning: "Warnung: LEDVANCE und OSRAM LED-Röhren dürfen nur mit einem kompatiblen Vorschaltgerät betrieben werden. LEDVANCE übernimmt keine Verantwortung, Garantie oder Haftung, wenn Vorschaltgeräte verwendet werden, die nicht genannt sind, die als nicht kompatible Vorschaltgeräte gekennzeichnet sind oder wenn Nachfolgemodelle/andere Referenznummern von geprüften Vorschaltgeräten verwendet werden."
         disclaimer: "Haftungsausschluss: Änderungen ohne Vorankündigung vorbehalten. Irrtümer und Auslassungen sind vorbehalten."
-        compatible_lights: Kompatible OSRAM SubstiTUBES
+        compatible_lights: Kompatible LED Röhren von LEDVANCE
         compatible_ballast: Kompatible Vorschaltgeräte
     home:
-        title: Bitte geben Sie die Daten Ihrer SubstiTUBE oder Ihres Vorschaltgeräts in das Suchfeld ein. Sie finden diese Informationen auf Ihrem Vorschaltgerät oder Ihrer SubstiTUBE aufgedruckt. Kompatible Produkte werden nach der Suche angezeigt und können ausgewählt werden.
+        title: Bitte geben Sie die Daten Ihres Vorschaltgeräts oder Ihrer LEDVANCE / OSRAM LED Röhre in das Suchfeld ein. Sie finden diese Informationen auf Ihrem Vorschaltgerät oder Ihrer LED Röhre aufgedruckt. Kompatible Produkte werden nach der Suche angezeigt und können ausgewählt werden.
         imprint: Impressum
         termsOfUse: Nutzungsbedingungen
         privacyPolicy: Datenschutzbestimmungen
@@ -96,9 +96,9 @@ $:
     no_results:
         short_message: Kein Suchergebnis.
         long_message: "Kein Suchergebnis. \n \n
-        Wenn das vorhandene EVG nicht aufgeführt ist, wurde es nicht für die Lampe getestet. Bitte setzen Sie sich mit unserem Kundendienst in Verbindung. KVG/VVG sind immer kompatibel mit den SubstiTUBE EM and UNIVERSAL Produkten."
+        Wenn das vorhandene EVG nicht aufgeführt ist, wurde es nicht für die Lampe getestet. Bitte setzen Sie sich mit unserem Kundendienst in Verbindung. KVG/VVG sind immer kompatibel mit den LED Röhren EM and UNIVERSAL Produkten."
     scenario_text:
         scenario_em: Betrieb am KVG/VVG und Netzspannung (AC). Kompatibilitätsprüfung für KVG/VVG nicht erforderlich.
         scenario_ac: Betrieb an Netzspannung (AC).
-        scenario_t8u: Betrieb auch am KVG/VVG und Netzspannung (AC). Kompatibilitätsprüfung für KVG/VVG nicht erforderlich..
+        scenario_t8u: Betrieb auch am KVG/VVG und Netzspannung (AC). Kompatibilitätsprüfung für KVG/VVG nicht erforderlich.
         scenario_t5u: Betrieb auch an Netzspannung (AC).

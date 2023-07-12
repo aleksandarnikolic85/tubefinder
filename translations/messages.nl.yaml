@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Niet-compatibele lichtbronnen
     messages:
         important_info: "Houd er rekening mee dat de productnaam en het referentienummer van het voorschakelapparaat identiek moet zijn met de productnaam en referentienummer van het geselecteerde voorschakelapparaat. \n
-        Het is verplicht om OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/andere referentienr. modellen van geteste voorschakelapparaten."
-        tooltip_msg: De basiscode staat vermeld op de SubstiTUBE lamp.
+        Het is verplicht om LEDVANCE en OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/andere referentienr. modellen van geteste voorschakelapparaten."
+        tooltip_msg: De basiscode staat vermeld op de LED buis.
         empty_results_ballast: Als het bestaande voorschakelapparaat niet weergegeven wordt, is het niet getest met de lichtbron. Neem contact op met onze afdeling Technical Support.
         empty_results_light_sources: Als de bestaande lichtbron niet weergeven wordt, is het niet getest met het voorschakelapparaat. Neem contact op met onze afdeling Technical Support.
         guarantee_message: Meer informatie en de exacte garantievoorwaarden vindt u op https://www.benelux.ledvance.com/nl/professioneel/services/garantie.
@@ -69,23 +69,23 @@ $:
         tableDownload: Download PDF met alle resultaten
     pdf_titles:
         techincal_data: Technische gegevens
-        summary_title: Samenvatting van de geselecteerde OSRAM SubstiTUBE
-        summary_title_list: Compatibele OSRAM SubstiTUBES
+        summary_title: Samenvatting van de geselecteerde LED buis
+        summary_title_list: Compatibele LED buizen van LEDVANCE
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Pagina
         page_of: van
-        copiright:  "© 2021, LEDVANCE GmbH. Alle rechten voorbehouden."
+        copiright:  "© 2023, LEDVANCE GmbH. Alle rechten voorbehouden."
     pdf_text:
         your_ecg_on_hand: Uw geselecteerde voorschakelapparaat
-        your_substitube_on_hand: Uw geselecteerde OSRAM SubstiTUBE
-        compatible_osram_substitube: Compatibele OSRAM SubstiTUBE
-        warning:  "Waarschuwing: Het is verplicht om OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/ander referentienr. modellen van geteste voorschakelapparaten."
+        your_substitube_on_hand: Uw geselecteerde LED buis
+        compatible_osram_substitube: Compatibele LED buizen van LEDVANCE
+        warning:  "Waarschuwing: Het is verplicht om LEDVANCE en OSRAM LED buizen alleen met compatibele voorschakelapparaten te bedienen. LEDVANCE aanvaardt geen enkele verantwoordelijkheid, garantie of aansprakelijkheid bij het gebruik van niet-genoemde voorschakelapparaten, gemarkeerd als niet-compatibele voorschakelapparaten of bij het gebruik van opvolger/ander referentienr. modellen van geteste voorschakelapparaten."
         disclaimer: "Disclaimer: Onder voorbehoud van verandering zonder kennisgeving. Fouten en drukfouten voorbehouden. "
-        compatible_lights: Compatibele OSRAM SubstiTUBES
+        compatible_lights: Compatibele LED buizen van LEDVANCE
         compatible_ballast: Compatibel voorschakelapparaat
     home:
-        title: Voer de data van uw SubstiTUBE of voorschakelapparaat in het zoekveld. Deze informatie is te vinden op uw SubstiTUBE of voorschakelapparaat. Compatibele producten worden weergeven en kunnen worden geselecteerd na het zoeken.
+        title: Voer de data van uw voorschakelapparaat of LEDVANCE / OSRAM LED buis in het zoekveld. Deze informatie is te vinden op uw voorschakelapparaat of LED buis. Compatibele producten worden weergeven en kunnen worden geselecteerd na het zoeken.
         imprint: Imprint
         termsOfUse: Gebruiksvoorwaarden
         privacyPolicy: Privacybeleid
@@ -96,7 +96,7 @@ $:
     no_results:
         short_message: Geen zoekresulaten.
         long_message: "Geen zoekresultaten. \n \n
-        Als het bestaande E-VSA niet in de lijst voorkomt, is het niet op deze LED buis getest. Neem contact op met onze afdeling Customerservices. C-VSA's zijn altijd compatibel met de SubstiTUBE EM en UN producten."
+        Als het bestaande E-VSA niet in de lijst voorkomt, is het niet op deze LED buis getest. Neem contact op met onze afdeling Customerservices. C-VSA's zijn altijd compatibel met de LED buis EM en UN producten."
     scenario_text:
         scenario_em: Werkt op C-VSA en netspanning. Compatibiliteits-check voor C-VSA niet vereist.
         scenario_ac: Werkt direct op netspanning.

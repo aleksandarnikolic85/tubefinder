@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Fuentes de luz incompatibles
     messages:
         important_info: "Ten en cuenta: el nombre del producto y el número de referencia de su balasto deben ser idénticos al nombre del producto y al número de referencia de este balasto seleccionado. \n
-                        Es obligatorio operar los tubos LED OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía o responsabilidad cuando se utilizan balastos no mencionados, marcados como balastos no compatibles o cuando se utilizan modelos sucesores / diferentes con números de referencia de balastos probados."
-        tooltip_msg: Puede encontrar el código básico en su SubstiTUBE.
+                        Es obligatorio operar los tubos LED LEDVANCE y OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía o responsabilidad cuando se utilizan balastos no mencionados, marcados como balastos no compatibles o cuando se utilizan modelos sucesores / diferentes con números de referencia de balastos probados."
+        tooltip_msg: Puede encontrar el código básico en su Tubo LED.
         empty_results_ballast: Si el balasto existente no figura en la lista, no se ha probado para la fuente de luz. Ponte en contacto con nuestro servicio de atención al cliente.
         empty_results_light_sources: Si la fuente de luz existente no figura en la lista, no se ha probado para el balasto. Ponte en contacto con nuestro servicio de atención al cliente.
         guarantee_message: Encontrarás más información y los términos y condiciones exactos de la garantía en www.ledvance.es/garantias.
@@ -69,23 +69,23 @@ $:
         tableDownload: Descarga PDF con todos los resultados
     pdf_titles:
         techincal_data: Datos técnicos
-        summary_title: Resumen del tubo SubstiTUBE marca OSRAM seleccionado
-        summary_title_list: Tubos SubstiTUBE marca OSRAM compatibles
+        summary_title: Resumen del tubo LED seleccionado
+        summary_title_list: Tubos LED compatibles de LEDVANCE
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Página
         page_of: de
-        copiright: "© 2021, LEDVANCE GmbH. Todos los derechos reservados."
+        copiright: "© 2023, LEDVANCE GmbH. Todos los derechos reservados."
     pdf_text:
         your_ecg_on_hand: Tu balasto a mano
-        your_substitube_on_hand: Tu tubo SubstiTUBE marca OSRAM a mano
-        compatible_osram_substitube: Tubo SubstiTUBE marca OSRAM compatible
-        warning: "Advertencia: Es obligatorio operar los Tubos LED marca OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía u obligación cuando se utilizan balastos no mencionados, marcados como no compatibles o cuando se utilizan modelos sucesores / modelos con referencia diferentes a los balastos probados."
+        your_substitube_on_hand: Tu tubo LED a mano
+        compatible_osram_substitube: Tubos LED compatibles de LEDVANCE
+        warning: "Advertencia: Es obligatorio operar los Tubos LED marca LEDVANCE y OSRAM solo con balasto compatible. LEDVANCE no acepta ninguna responsabilidad, garantía u obligación cuando se utilizan balastos no mencionados, marcados como no compatibles o cuando se utilizan modelos sucesores / modelos con referencia diferentes a los balastos probados."
         disclaimer: "Descargo de responsabilidad: sujeto a cambios sin previo aviso. Se exceptúan errores y omisiones."
-        compatible_lights: Tubos SubstiTUBE marca OSRAM compatibles
+        compatible_lights: Tubos LED compatibles de LEDVANCE
         compatible_ballast: Balasto compatible
     home:
-        title: Introducelos datos de tu tubo SubstiTUBE o balasto en el campo de búsqueda. Encontrarás esta información impresa en el balasto o tubo. Los productos compatibles se mostrarán después de la búsqueda y se pueden seleccionar.
+        title: Introduce los datos de tu balastro o tubo LEDVANCE / OSRAM LED en el campo de búsqueda. Encontrará esta información impresa en su balasto o tubo LED. Los productos compatibles se mostrarán después de la búsqueda y se pueden seleccionar.
         imprint: Imprimir
         termsOfUse: Condiciones de uso
         privacyPolicy: Política de privacidad
@@ -96,7 +96,7 @@ $:
     no_results:
         short_message: Sin resultado de búsqueda.
         long_message: "Sin resultado de búsqueda. \n \n
-        Si el ECE existente no aparece en la lista, no se ha probado para la lámpara. Ponte en contacto con nuestro servicio de atención al cliente. Los ECC siempre son compatibles con los tubos SubstiTUBE EM y UNIVERSAL."
+        Si el ECE existente no aparece en la lista, no se ha probado para la lámpara. Ponte en contacto con nuestro servicio de atención al cliente. Los ECC siempre son compatibles con los tubos LED EM y UNIVERSAL."
     scenario_text:
         scenario_em: Funcionamiento con ECC y directo a red AC. No se requiere verificación de compatibilidad para ECC.
         scenario_ac: Funcionamiento directo a red AC.

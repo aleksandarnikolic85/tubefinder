@@ -32,7 +32,7 @@ class ImportBallastsCommand extends Command
         $sym = new SymfonyStyle($input, $output);
 
 
-//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\substitube\\import\\ballasts\\BallastDB.xlsx');
+//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\\tubefinder\\import\\ballasts\\BallastDB.xlsx');
         $xlsx = \SimpleXLSX::parse('/var/www/tubefinder/import/ballasts/BallastDB.xlsx');
 
         if($xlsx) {

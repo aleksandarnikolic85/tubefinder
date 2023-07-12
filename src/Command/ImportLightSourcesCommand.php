@@ -34,7 +34,7 @@ class ImportLightSourcesCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $sym = new SymfonyStyle($input, $output);
-//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\substitube\\import\\lightsources\\lightsDBpimcore.xlsx');
+//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\\tubefinder\\import\\lightsources\\lightsDBpimcore.xlsx');
         $xlsx = \SimpleXLSX::parse('/var/www/tubefinder/import/lightsources/lightsDBpimcore.xlsx');
 
         if($xlsx) {

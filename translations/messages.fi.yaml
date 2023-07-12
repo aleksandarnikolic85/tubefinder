@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Ei-yhteensopivat valonlähteet
     messages:
         important_info: "HUOMIO: Tuotteen nimen ja liitäntälaitteen tuotenumeron tulee olla identtisiä tuotenimen ja valitun liitäntälaitteen kanssa. \n
-        OSRAM LED-valoputkia tulee käyttää vain yhteensopivan liitäntälaitteen kanssa. LEDVANCE ei ota vastuuta tai takaa tuotteiden toimivuutta, mikäli niitä käytetään yhteensopimattomien liitäntälaitteiden kanssa. Yhteensopimattomaksi liitäntälaitteeksi luokitellaan liitäntälaitteet, jotka ei ole mainittu tässä työkalussa tai ne on ilmoitettu yhteensopimattomaksi tai liitäntälaitteella on eri tuotenumero."
-        tooltip_msg:  Löydät tunnistekoodin SubstiTUBE LED-valoputkesta.
+        LEDVANCE ja OSRAM LED-valoputkia tulee käyttää vain yhteensopivan liitäntälaitteen kanssa. LEDVANCE ei ota vastuuta tai takaa tuotteiden toimivuutta, mikäli niitä käytetään yhteensopimattomien liitäntälaitteiden kanssa. Yhteensopimattomaksi liitäntälaitteeksi luokitellaan liitäntälaitteet, jotka ei ole mainittu tässä työkalussa tai ne on ilmoitettu yhteensopimattomaksi tai liitäntälaitteella on eri tuotenumero."
+        tooltip_msg:  Löydät tunnistekoodin LED-valoputkesta.
         empty_results_ballast: Jos olemassa olevaa elektronista liitäntälaitetta ei löydy listalta, sitä ei ole testattu valonlähteelle. Otathan yhteyttä asiakaspalveluumme.
         empty_results_light_sources: Jos olemassa olevaa valonlähdettä ei löydy listalta, sitä ei ole testattu elektroniselle liitäntälaitteelle. Otathan yhteyttä asiakaspalveluumme.
         guarantee_message: Katso lisätietoja ja takuuehdot www.ledvance.fi/takuu.
@@ -69,23 +69,23 @@ $:
         tableDownload: Lataa PDF kaikilla tuloksilla
     pdf_titles:
         techincal_data: Tekniset tiedot
-        summary_title: Yhteenveto valituista OSRAM SubstiTUBEista
-        summary_title_list: Yhteensopivat OSRAM SubstiTUBEt
+        summary_title: Yhteenveto valituista LED-valoputkesta
+        summary_title_list: Yhteensopivat LED-valoputket LEDVANCE:lta
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Sivu
         page_of:
-        copiright: "© 2021, LEDVANCE GmbH. All rights reserved."
+        copiright: "© 2023, LEDVANCE GmbH. All rights reserved."
     pdf_text:
         your_ecg_on_hand: Kädessäsi oleva liitäntälaite
-        your_substitube_on_hand: Kädessäsi oleva OSRAM SubstiTUBE -valoputki
-        compatible_osram_substitube: Yhteensopiva OSRAM SubstiTUBEn kanssa
-        warning: "Varoitus: OSRAM LED-valoputkia tulee käyttää vain yhteensopivan liitäntälaitteen kanssa. LEDVANCE ei ota vastuuta tai takaa tuotteiden toimivuutta, mikäli niitä käytetään yhteensopimattomien liitäntälaitteiden kanssa. Yhteensopimattomaksi liitäntälaitteeksi luokitellaan liitäntälaitteet, jotka ei ole mainittu tässä työkalussa tai ne on ilmoitettu yhteensopimattomaksi tai liitäntälaittella on eri tuotenumero."
+        your_substitube_on_hand: Kädessäsi oleva LED -valoputki
+        compatible_osram_substitube: Yhteensopivat LED-valoputket LEDVANCE:lta
+        warning: "Varoitus: LEDVANCE ja OSRAM LED-valoputkia tulee käyttää vain yhteensopivan liitäntälaitteen kanssa. LEDVANCE ei ota vastuuta tai takaa tuotteiden toimivuutta, mikäli niitä käytetään yhteensopimattomien liitäntälaitteiden kanssa. Yhteensopimattomaksi liitäntälaitteeksi luokitellaan liitäntälaitteet, jotka ei ole mainittu tässä työkalussa tai ne on ilmoitettu yhteensopimattomaksi tai liitäntälaittella on eri tuotenumero."
         disclaimer:  "Vastuuvapauslauseke: Oikeudet muutoksiin pidätetään. Saattaa sisältää virheitä ja puutteita."
-        compatible_lights: Yhteensopivat OSRAM SubstiTUBEt
+        compatible_lights: Yhteensopivat LED-valoputket LEDVANCE:lta
         compatible_ballast: Yhteensopiva liitäntälaite
     home:
-        title: Syötä SubstiTUBEn tai liitäntälaitteen tiedot alla olevaan hakukenttään. SubstiTUBEn tai liitäntälaitteen tiedot on merkitty tuotteeseen. Yhteensopivat tuotteet näytetään haun jälkeen.
+        title: Syötä liitäntälaitteen tai LEDVANCE / OSRAM LED-valoputken tiedot hakukenttään. Nämä tiedot löytyvät painettuna liitäntälaitteesta tai LED-valoputkesta. Yhteensopivat tuotteet näytetään haun jälkeen.
         imprint: Julkaisijatiedot
         termsOfUse: Käyttöehdot
         privacyPolicy: Tietosuojakäytäntö
@@ -96,7 +96,7 @@ $:
     no_results:
         short_message: Ei hakutuloksia.
         long_message: "Ei hakutuloksia.. \n \n
-        Mikäli liitäntälaitetta ei löydy, sitä ei ole testattu kyseisen lampun kanssa. Ota yhteyttä asiakaspalveluumme. SubstiTUBE EM- ja UNIVERSAL LED-valoputket ovat aina yhteensopivia kuristimen kanssa."
+        Mikäli liitäntälaitetta ei löydy, sitä ei ole testattu kyseisen lampun kanssa. Ota yhteyttä asiakaspalveluumme. LED-valoputki EM- ja UNIVERSAL LED-valoputket ovat aina yhteensopivia kuristimen kanssa."
     scenario_text:
         scenario_em: Käyttö vain kuristimen kanssa ja 230V. Yhteensopivuutta kuristimen kanssa ei tarvitse tarkistaa.
         scenario_ac: Käyttö 230V.

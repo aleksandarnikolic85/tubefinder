@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Incompatible light sources
     messages:
         important_info: "Please note: the product name and reference number of your ballast must be identical to the product name and reference number of this selected ballast. \n
-        Warning: It is mandatory to operate OSRAM LED Tubes only with compatible ballast. LEDVANCE does not accept any responsibility, warranty or liability when using ballasts not mentioned, marked as non-compatible ballasts or when using successor /different reference number models of tested ballasts."
-        tooltip_msg: You can find the Basic Code on your SubstiTUBE.
+        Warning: It is mandatory to operate LEDVANCE and OSRAM LED Tubes only with compatible ballast. LEDVANCE does not accept any responsibility, warranty or liability when using ballasts not mentioned, marked as non-compatible ballasts or when using successor /different reference number models of tested ballasts."
+        tooltip_msg: You can find the Basic Code on your LED tube.
         empty_results_ballast: If the existing ballast is not listed, it has not been tested for the light source. Please get in contact with our customer support.
         empty_results_light_sources: If the existing light source is not listed, it has not been tested for the ballast. Please get in contact with our customer support.
         guarantee_message: You will find further information and the exact guarantee terms and conditions at www.ledvance.com/guarante.
@@ -69,23 +69,23 @@ $:
         tableDownload: Download PDF with all results
     pdf_titles:
         techincal_data: Technical data
-        summary_title: Summary of your selected OSRAM SubstiTUBE
-        summary_title_list: Compatible OSRAM SubstiTUBES
+        summary_title: Summary of your selected LED tube
+        summary_title_list: Compatible LED tubes from LEDVANCE
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Page
         page_of: of
-        copiright: "© 2021, LEDVANCE GmbH. All rights reserved."
+        copiright: "© 2023, LEDVANCE GmbH. All rights reserved."
     pdf_text:
         your_ecg_on_hand: Your ballast on hand
-        your_substitube_on_hand: Your OSRAM SubstiTUBE on hand
-        compatible_osram_substitube: Compatible OSRAM SubstiTUBE
-        warning: "Warning: It is mandatory to operate OSRAM LED Tubes only with compatible ballast. LEDVANCE does not accept any responsibility, warranty or liability when using ballasts not mentioned, marked as non-compatible ballasts or when using successor /different Reference No. models of tested ballasts."
+        your_substitube_on_hand: Your LED tube on hand
+        compatible_osram_substitube: Compatible LED tube from LEDVANCE
+        warning: "Warning: It is mandatory to operate LEDVANCE and OSRAM LED Tubes only with compatible ballast. LEDVANCE does not accept any responsibility, warranty or liability when using ballasts not mentioned, marked as non-compatible ballasts or when using successor /different Reference No. models of tested ballasts."
         disclaimer: "Disclaimer: Subject to change without notice. Errors and omission excepted."
-        compatible_lights: Compatible OSRAM SubstiTUBES
+        compatible_lights: Compatible LED tubes from LEDVANCE
         compatible_ballast: Compatible ballast
     home:
-        title: Please enter the data of your SubstiTUBE or ballast in the search field. You will find this information printed on your ballast or SubstiTUBE. Compatible products will be displayed after the search and can be selected.
+        title: Please enter the data of your ballast or LEDVANCE / OSRAM LED tube in the search field. You will find this information printed on your ballast or LED tube. Compatible products will be displayed after the search and can be selected.
         imprint: Imprint
         termsOfUse: Terms of use
         privacyPolicy: Privacy Policy
@@ -96,7 +96,7 @@ $:
     no_results:
         short_message: No search result.
         long_message: "No search result. \n \n
-        If the existing ECG is not listed, it has not been tested for the lamp. Please get in contact with our customer support. CCG are always compatible with the SubstiTUBE EM and UNIVERSAL products."
+        If the existing ECG is not listed, it has not been tested for the lamp. Please get in contact with our customer support. CCG are always compatible with the LED tube EM and UNIVERSAL products."
     scenario_text:
         scenario_em: Operation on CCG and AC mains. Compatibility check for CCG not required.
         scenario_ac: Operation on AC mains.

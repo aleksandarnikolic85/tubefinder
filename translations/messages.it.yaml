@@ -50,8 +50,8 @@ $:
         incompatible_light_sources: Sorgenti luminose incompatibili
     messages:
         important_info: "Nota: il nome del prodotto e il numero di riferimento del tuo reattore devono essere identici al nome del prodotto e al numero di riferimento del reattore selezionato. \n
-            È obbligatorio utilizzare i tubi LED OSRAM solo con un reattore compatibile. LEDVANCE non si assume alcuna responsabilità, garanzia o responsabilità quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/numeri di riferimento diversi di reattori testati."
-        tooltip_msg: Puoi trovare il codice base sul tuo SubstiTUBE.
+            È obbligatorio utilizzare i tubi LED LEDVANCE e OSRAM solo con un reattore compatibile. LEDVANCE non si assume alcuna responsabilità, garanzia o responsabilità quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/numeri di riferimento diversi di reattori testati."
+        tooltip_msg: Puoi trovare il codice base sul tuo tubo LED.
         empty_results_ballast: Se il reattore esistente non è in elenco, non è stato testato per la sorgente luminosa. Si prega di mettersi in contatto con il nostro servizio clienti.
         empty_results_light_sources: Se la sorgente luminosa esistente non è in elenco, non è stata testata per il reattore. Si prega di mettersi in contatto con il nostro servizio clienti.
         guarantee_message: Per ulteriori informazioni, le condizioni e i termini di garanzia visita il sito https://www.ledvance.it/professionista/servizi/garanzia.
@@ -69,23 +69,23 @@ $:
         tableDownload: Scarica PDF con tutti i risultati
     pdf_titles:
         techincal_data: Dati tecnici
-        summary_title: Riepilogo dei tubi OSRAM SubstiTUBE selezionati
-        summary_title_list: OSRAM SubstiTUBE compatibili
+        summary_title: Riepilogo dei tubi LED selezionati
+        summary_title_list: Tubi LED compatibili di LEDVANCE
         app_name: LEDVANCE Tube Finder
     pdf_footer:
         page: Pagina
         page_of: di
-        copiright: "© 2021, LEDVANCE GmbH. Tutti i diritti sono riservati."
+        copiright: "© 2023, LEDVANCE GmbH. Tutti i diritti sono riservati."
     pdf_text:
         your_ecg_on_hand: Il tuo reattore a portata di mano
-        your_substitube_on_hand: Il tuo OSRAM SubstiTUBE a portata di mano
-        compatible_osram_substitube: Tubi OSRAM SubstiTUBE compatibili
-        warning: "Attenzione: è obbligatorio utilizzare i tubi LED OSRAM solo con reattori compatibili. LEDVANCE non si assume alcuna responsabilità, garanzia o obbligo quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/diversi con numero di riferimento di testati zavorre."
+        your_substitube_on_hand: Il tuo tubo LED a portata di mano
+        compatible_osram_substitube: Tubi LED compatibili di LEDVANCE
+        warning: "Attenzione: è obbligatorio utilizzare i tubi LED LEDVANCE e OSRAM solo con reattori compatibili. LEDVANCE non si assume alcuna responsabilità, garanzia o obbligo quando si utilizzano reattori non menzionati, contrassegnati come reattori non compatibili o quando si utilizzano modelli successivi/diversi con numero di riferimento di testati zavorre."
         disclaimer: "Disclaimer: soggetto a modifiche senza preavviso. Salvo errori e omissioni."
-        compatible_lights: Tubi SubstiTUBES OSRAM Compatibili
+        compatible_lights: Tubi LED compatibili di LEDVANCE
         compatible_ballast: Reattore compatibile
     home:
-        title: Inserisci i dati del tuo SubstiTUBE o reattore nel campo di ricerca. Troverai queste informazioni stampate sul tuo reattore o SubstiTUBE. I prodotti compatibili verranno visualizzati dopo la ricerca e potranno essere selezionati.
+        title: Inserisci i dati del tuo reattore o del tubo LED LED OSRAM / LEDVANCE nel campo di ricerca. Troverai queste informazioni stampate sul tuo reattore o tubo LED. I prodotti compatibili verranno visualizzati dopo la ricerca e potranno essere selezionati.
         imprint: Impronta
         termsOfUse: Termini di utilizzo
         privacyPolicy: Informativa sulla Privacy
@@ -96,7 +96,7 @@ $:
     no_results:
         short_message: Nessun risultato di ricerca.
         long_message: "Nessun risultato di ricerca. \n \n
-            Se l’ECG esistente non è in elenco, non è stato testato per la lampada. Contatta il nostro supporto clienti. CCG è sempre compatibile con i prodotti SubstiTUBE EM e UNIVERSAL."
+            Se l’ECG esistente non è in elenco, non è stato testato per la lampada. Contatta il nostro supporto clienti. CCG è sempre compatibile con i prodotti tubo LED EM e UNIVERSAL."
     scenario_text:
         scenario_em: Funzionamento per alimentazione convenzionale CCG e rete AC. Il controllo di compatibilità per CCG non è richiesto.
         scenario_ac: Funzionamento su rete AC.
