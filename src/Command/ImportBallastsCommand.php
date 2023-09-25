@@ -32,7 +32,7 @@ class ImportBallastsCommand extends Command
         $sym = new SymfonyStyle($input, $output);
 
 
-//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\\tubefinder\\import\\ballasts\\BallastDB.xlsx');
+//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\substitube\\import\\ballasts\\BallastDB.xlsx');
         $xlsx = \SimpleXLSX::parse('/var/www/tubefinder/import/ballasts/BallastDB.xlsx');
 
         if($xlsx) {
@@ -76,7 +76,7 @@ class ImportBallastsCommand extends Command
                     $this->em->persist($ballast);
 
                     foreach ($compatibleLightSources as $ean) {
-                        $lightSource = $this->em->getRepository(LightSource::class)->findOneBy(array('ean' => $ean));
+                        $lightSource = $this->em->getRepository(LightSource::class)->findOneBy(array('ean' => trim($ean)));
 
                         if($lightSource) {
                             $lightSource->addCompatibleBallast($ballast);
@@ -85,7 +85,7 @@ class ImportBallastsCommand extends Command
                     }
 
                     foreach ($incompatibleLightSources as $ean) {
-                        $lightSource = $this->em->getRepository(LightSource::class)->findOneBy(array('ean' => $ean));
+                        $lightSource = $this->em->getRepository(LightSource::class)->findOneBy(array('ean' => trim($ean)));
 
                         if($lightSource) {
                             $lightSource->addUncompatibleBallast($ballast);
