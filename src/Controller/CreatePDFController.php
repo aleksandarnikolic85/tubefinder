@@ -36,8 +36,8 @@ class CreatePDFController extends AbstractController
             "page-size" => "A4",
         ];
 
-        $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
-//        $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
+//        $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
+        $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
 
         $filename = str_replace([' ', '/', '-'], '_', $lightSource->getEan());
         return new Response(
@@ -75,8 +75,8 @@ class CreatePDFController extends AbstractController
                 "page-size" => "A4",
             ];
 
-            $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
-//            $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
+//            $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
+            $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
 
             $filename = str_replace([' ', '/', '-'], '_', $ballast->getProductName() . " COMPATIBLE_LIGHT_SOURCES");
             return new Response(
@@ -113,8 +113,8 @@ class CreatePDFController extends AbstractController
             "page-size" => "A4",
         ];
 
-        $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
-//        $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
+//        $snappy = new Pdf(" C:\doc\wkhtmltopdf\bin\wkhtmltopdf.exe");
+        $snappy = new Pdf("/usr/local/bin/wkhtmltopdf");
 
         $filename = str_replace([' ', '/', '-'], '_', $ballast->getProductName());
         return new Response(
