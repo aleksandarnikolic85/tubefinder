@@ -9,7 +9,9 @@ use App\Constants\LampTypeConstants;
 use App\Constants\LengthConstants;
 use App\Constants\LifetimeConstants;
 use App\Constants\WattageConstants;
+use App\Entity\Ballast;
 use App\Entity\LightSource;
+use App\Entity\Remarks;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -34,8 +36,28 @@ class ImportLightSourcesCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $sym = new SymfonyStyle($input, $output);
-//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\substitube\\import\\lightsources\\lightsDBpimcore.xlsx');
+//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\tubefinder\\import\\lightsources\\lightsDBpimcore.xlsx');
         $xlsx = \SimpleXLSX::parse('/var/www/tubefinder/import/lightsources/lightsDBpimcore.xlsx');
+
+        $remarks = $this->em->getRepository(Remarks::class)->findAll();
+        $ballasts = $this->em->getRepository(Ballast::class)->findAll();
+        $lightSources = $this->em->getRepository(LightSource::class)->findAll();
+
+
+        foreach ($remarks as $remark) {
+            $this->em->remove($remark);
+        }
+        $this->em->flush();
+
+        foreach ($ballasts as $ballast) {
+            $this->em->remove($ballast);
+        }
+        $this->em->flush();
+
+        foreach ($lightSources as $lightSource) {
+            $this->em->remove($lightSource);
+        }
+        $this->em->flush();
 
         if($xlsx) {
             $rows = $xlsx->rows();
@@ -64,12 +86,8 @@ class ImportLightSourcesCommand extends Command
                     $applications = $row[15];
                     $scenario = $row[16];
 
-                    $lightSource = $this->em->getRepository(LightSource::class)->findOneBy(array('ean' => $ean));
-
-                    if (!$lightSource) {
-                        $lightSource = new LightSource();
-                        $lightSource->setEan($ean);
-                    }
+                    $lightSource = new LightSource();
+                    $lightSource->setEan($ean);
 
                     $lightSource->setProductName($productName);
 
@@ -167,6 +185,11 @@ class ImportLightSourcesCommand extends Command
                     }
 
                     if($efficiencyClass) {
+
+                        if($efficiencyClass == 'A++' or $efficiencyClass == 'A+') {
+                            $efficiencyClass = '';
+                        }
+
                         $efficiencyConstants = EfficiencyConstants::getConstants();
 
                         foreach ($efficiencyConstants as $key => $value) {

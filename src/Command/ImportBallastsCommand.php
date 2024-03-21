@@ -32,7 +32,7 @@ class ImportBallastsCommand extends Command
         $sym = new SymfonyStyle($input, $output);
 
 
-//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\substitube\\import\\ballasts\\BallastDB.xlsx');
+//        $xlsx = \SimpleXLSX::parse('C:\\xampp\\htdocs\\tubefinder\\import\\ballasts\\BallastDB.xlsx');
         $xlsx = \SimpleXLSX::parse('/var/www/tubefinder/import/ballasts/BallastDB.xlsx');
 
         if($xlsx) {
@@ -55,12 +55,9 @@ class ImportBallastsCommand extends Command
                     $compatibleLightSources = explode(',', $row[5]);
                     $incompatibleLightSources = explode(',', $row[6]);
 
-                    $ballast = $this->em->getRepository(Ballast::class)->findOneBy(array('refNo' => $refNo));
+                    $ballast = new Ballast();
+                    $ballast->setRefNo($refNo);
 
-                    if (!$ballast) {
-                        $ballast = new Ballast();
-                        $ballast->setRefNo($refNo);
-                    }
 
                     $ballast->setProductName($productName);
 
