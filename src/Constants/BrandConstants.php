@@ -14,6 +14,7 @@ class BrandConstants
     const BRAND_HEP = 'HEP';
     const BRAND_ABB = 'ABB';
     const BRAND_TCI = 'TCI';
+    const BRAND_SYLVANIA = 'Sylvania';
 
     static private $constants = array(
 
@@ -27,6 +28,7 @@ class BrandConstants
       self::BRAND_HEP => 'HEP',
       self::BRAND_ABB => 'ABB',
       self::BRAND_TCI => 'TCI',
+      self::BRAND_SYLVANIA => 'Sylvania',
     );
 
     static public function getConstants()
